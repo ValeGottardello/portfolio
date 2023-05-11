@@ -3,52 +3,19 @@
 .App {
         font-family: var(--font-text);
 }
-
-.wrapper{
-    display: grid;
-    grid-template-columns: 1fr 11fr;
-    height: 82vh;
+.App  *{
+    list-style: none;
+    text-decoration: none;
 }
-
 .mode{
     margin: 10px;
     margin-left: 30px;
 }
-aside {
-    text-align: center;
-}
-.aside{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 93%;
-}
-
-.aside-title{
-    text-align: center;
-    width: 2rem;
-    font-size: 3.5em;
-    word-wrap: break-word;
-    align-self: center;
-    filter: blur(2px) grayscale(50%);
-    font-family: var(--font-titles);
-}
-.slide{
-    height: 100%;
-}
-
-.footer-title{
-    filter: blur(2px) grayscale(50%);
-    font-family: var(--font-titles);
-    font-size: 9rem;
-    letter-spacing: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-    flex-wrap: wrap;
-
+.mode button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 footer{
     position: absolute;
@@ -63,9 +30,9 @@ footer div ul{
 }
 footer div ul {
     padding: 0;
-    margin: 0 ;
+    margin: 20px;
     display: flex;
-    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     height: 100%;
     font-size: 2rem;

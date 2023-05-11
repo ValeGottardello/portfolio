@@ -1,54 +1,45 @@
 import './css/App.css';
 import './css/lightMode.css'
 import './css/darkMode.css'
-import BodyClass from './components/BodyClass';
-import Pages from './components/Pages';
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { MdDarkMode, MdOutlineDarkMode, MdOutlineMail  } from "react-icons/md";
-import { motion } from 'framer-motion';
+import { FaLinkedin, FaGithub, FaRegClipboard } from 'react-icons/fa';
+import { MdOutlineMail  } from "react-icons/md";
+import { Route, Routes } from 'react-router-dom';
+import Welcome from './pages/Welcome';
+import AboutPage from './pages/AboutPage';
+import AcademicPage from './pages/AcademicPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
+import NavBar from './components/NavBar';
 
 function App () {
-    const [darkMode, setDarkMode] = useState(false);
-  
-    const toggleDarkMode = () => {
-      setDarkMode(!darkMode);
-      if (document.body.classList.contains('dark')) {
-        document.body.classList.remove('dark');
-        document.body.classList.add('light');
-      } else {
-        document.body.classList.remove('light');
-        document.body.classList.add('dark');
-      }
-    };
+    
   
     return (
       <div className="App">
-        <BodyClass className={darkMode ? 'dark' : 'light'}/>
         <main className="wrapper">
-          <aside>
-            <Button variant="secondary" className='mode' onClick={toggleDarkMode}>{darkMode ? <MdDarkMode/> : <MdOutlineDarkMode/>}</Button>
-            <div className='aside'>
-                <h2 className="aside-title">
-                  PORTFOLIO
-                </h2>
-            </div>
-          </aside>
+          <header>
+            <NavBar/>
+          </header>
           <section className='main'>
-              <Pages/>
+            <Routes>
+                <Route path="/" element={<Welcome/>}/>
+                <Route path="/about" element={<AboutPage/>}/>
+                <Route path="/skills" element={<AcademicPage/>}/>
+                <Route path="/projects" element={<ProjectsPage/>}/>
+                <Route path="/contact" element={<ContactPage/>}/>
+            </Routes>
           </section>
         </main>
-        <motion.footer>
-          <h1 className="footer-title"> VALENTINA</h1>
+        <footer>
           <div>
             <ul>
                 <li><a href='mailto:valengottardello37@gmail.com?subject=Change%20the%20subject&body=Hi%20Valentina!'><MdOutlineMail/></a></li>
                 <li><a href='https://www.linkedin.com/in/valentinagottardello/' target="_blank" rel="noreferrer"><FaLinkedin/></a></li>
                 <li><a href='https://github.com/ValeGottardello/' target="_blank" rel="noreferrer"><FaGithub/></a></li>
+                <li><a href="/cv/CV_Gottardello.pdf" target="_blank"><FaRegClipboard/></a></li>
             </ul>
           </div>
-        </motion.footer>
+        </footer>
       </div>
     )
 

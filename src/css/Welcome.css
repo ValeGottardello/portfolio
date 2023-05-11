@@ -5,27 +5,17 @@
       "welcome-info none none"
   ;
   gap: 50px;
-  height: 100%;
-}
-.slides{
-  height: 100%
 }
 
 .welcome-info{
   grid-area: welcome-info;
-  padding: 30px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
+
 .welcome-info h4{
     font-size: 1.3rem;
     font-weight: 400;
-
 }
+
 .welcome-info h1{
     font-size: 5rem;
     font-weight: 700;
@@ -37,6 +27,6 @@
   text-decoration: none;
 }
 .welcome-info div{
-  padding: 30px;
+  padding: 40px;
 
 }

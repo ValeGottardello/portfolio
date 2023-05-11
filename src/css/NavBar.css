@@ -1,0 +1,26 @@
+.wrapper header nav {
+    justify-content: flex-end;
+    width: 100%;
+    margin: 20px;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 20px;
+    align-items: center;
+}
+.navbar-collapse .navbar-nav {
+    align-items: center;
+    gap: 40px;
+    width: 60%;
+    justify-content: space-evenly
+}
+
+.navbar-nav  a a {
+    width: 100%;
+}
+.mode{
+    padding: 0;
+    margin: 0;
+}
