@@ -25,8 +25,27 @@
 }
 .welcome-info div a{
   text-decoration: none;
+  
+}
+.light .welcome-info div a{
+  color: var(--cardet);
+  
+}
+.light .welcome-info div a:hover{
+  color: white;
+  
 }
 .welcome-info div{
   padding: 40px;
 
+}
+
+.light .welcome-info h1 {
+  color: white;
+}
+.light .welcome-info h4 {
+  color: rgb(88, 62, 65);
+}
+.light .welcome-info h3 {
+  color: rgb(238, 225, 227);
 }

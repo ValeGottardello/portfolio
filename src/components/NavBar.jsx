@@ -25,18 +25,16 @@ function NavBar() {
   return (
     <>
         <BodyClass className={darkMode ? 'dark' : 'light'}/>
-        <Navbar>
+        <Navbar expand="lg">
             <Navbar.Brand><Link to='/'>icone</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav>
-                <Nav.Link><Link to='/about' eventKey="link-1">About</Link></Nav.Link>
-                <Nav.Link><Link to='/projects' eventKey="link-2">Projects</Link></Nav.Link>
-                <Nav.Link><Link to='/skills' eventKey="link-3">Skills</Link></Nav.Link>
-                <Nav.Link><Link to='/contact' eventKey="link-4">Contact</Link></Nav.Link>
-                <button className='cv'>
-                    <a href="/cv/CV_Gottardello.pdf" target="_blank"> Check my resume!</a>
-                </button>
+                <Link className='item-nav' to='/about' >About</Link>
+                <Link className='item-nav' to='/projects' >Projects</Link>
+                <Link className='item-nav' to='/skills' >Skills</Link>
+                <Link className='item-nav' to='/contact' >Contact</Link>
+                <a className='cv' href="/cv/CV_Gottardello.pdf" target="_blank">CV</a>       
                 <Button variant="secondary" className='mode' onClick={toggleDarkMode}>{darkMode ? <MdDarkMode/> : <MdOutlineDarkMode/>}</Button>
               </Nav>
             </Navbar.Collapse>
@@ -46,3 +44,4 @@ function NavBar() {
 }
 
 export default NavBar;
+

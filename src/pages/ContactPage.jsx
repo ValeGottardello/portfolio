@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { MdOutlineMail } from 'react-icons/md';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub,FaRegClipboard} from 'react-icons/fa';
 import { useForm, ValidationError } from '@formspree/react';
 import Alert from 'react-bootstrap/Alert';
 import { useState } from 'react';
@@ -19,13 +19,13 @@ export default function ContactPage () {
             <section className='contact-wrapper'>
                 <div className='contact-sect'>
                     <div>
-                        <h3>Please, do not hesitate to write to me!</h3>
+                        <h3>Please, don't forget leave me a message!</h3>
                         <div>
                             <ul className='contact-list'>
                                 <li><MdOutlineMail/><a href='mailto:valengottardello37@gmail.com?subject=Change%20the%20subject&body=Hi%20Valentina!'> valengottardello37@gmail.com</a></li>
                                 <li><FaLinkedin/><a href='https://www.linkedin.com/in/valentinagottardello/' target="_blank" rel="noreferrer"> https://www.linkedin.com/in/valentinagottardello/</a></li>
                                 <li><FaGithub/><a href='https://github.com/ValeGottardello/' target="_blank" rel="noreferrer"> https://github.com/ValeGottardello/</a></li>
-                                <a href="/cv/CV_Gottardello.pdf" target="_blank"> Check my resume!</a>
+                                <a href="/cv/CV_Gottardello.pdf" target="_blank"> <FaRegClipboard/>Check my resume!</a>
                                 
                             </ul>
                         </div>
@@ -41,9 +41,9 @@ export default function ContactPage () {
                                 <Form.Control as="textarea" name='message' id="message" rows={3} />
                                 <ValidationError prefix="Message" field="message" errors={state.errors} />
                             </Form.Group>
-                            <Button  className='cv' type="submit" disabled={state.submitting}>
+                            <button  className='cv' type="submit" disabled={state.submitting}>
                                 Send me a message!
-                            </Button>
+                            </button>
                         </Form>
                         { state.succeeded && show? (
                             <Alert variant="secondary" > 

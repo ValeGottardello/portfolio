@@ -1,18 +1,39 @@
 .about-wrapper{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-        "none none about-sect"
-    ;
-    gap: 50px;
+ width: 45%;
+ margin: 30px auto;
 }
 .about-sect{
-    grid-area: about-sect;
+    text-align: justify;
+    letter-spacing: 1px;
     padding: 30px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 20px;
 }
-.about-sect h2{
-    font-size: 2rem;
+/* .about-wrapper .circle{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+} */
+.about-wrapper h2{
+    font-size: 1.8rem;
+}
+.light .wrapper .about-sect{
+    background-color: rgba(126, 91, 95, 0.159);
+    color: rgba(255, 255, 255, 0.95);
+    border: 2px outset white;
+}
+.light .wrapper .about-wrapper .circle{
+    background-color: rgba(126, 91, 95, 0.158);
+    border-radius: 20px;
+    border: 1px inset var(--cardet);
+}
+.light .wrapper .about-wrapper h2{
+    color: white;
+    text-align: center;
+
+}
+.light main section div div div .slides .about-sect div a {
+    color: white;
 }

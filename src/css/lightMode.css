@@ -1,43 +1,24 @@
 
-.light .footer-title, .light .aside-title{
-    color: rgba(254, 254, 254, 0.582);
-}
-.light footer div ul a{
-    color: var(--cardet);
-}
-.light footer div ul li a:hover {
-   color: rgb(255, 244, 243);
-}
-.light footer div ul li:hover {
-    background-color: rgb(159, 82, 72);
-    border-radius: 10px;
- }
 .light{
     background: linear-gradient(to bottom,#7E5B5Fff,#F1C5BFff,#F2DFD9ff);
 }
-.light main aside .mode {
+.light .wrapper header nav {
+    background-color: rgba(126, 91, 95, 0.508);
+}
+
+.light .wrapper header nav .navbar-nav a a, .light .wrapper .cv, .light .wrapper header .navbar span a {
+    color: white;
+}
+
+
+.light main .mode {
     background-color: #7E5B5Fff;
     border: 2px inset #F2DFD9ff;
 }
-.light main aside .mode:active{
+.light main .mode:active{
     background-color: #F2DFD9ff;
 }
 
-.light main section div div div .slides .about-sect{
-    background-color: rgba(126, 91, 95, 0.159);
-    color: rgba(255, 255, 255, 0.95);
-    border: 2px outset var(--cardet);
-}
-
-.light main section div div div .slides .about-sect h2{
-    color: white;
-    text-align: center;
-    border: 2px outset var(--cardet);
-    
-}
-.light main section div div div .slides .about-sect div a {
-    color: white;
-}
 .light main section div div div .education {
     background-color: rgba(126, 91, 95, 0.159);
     color: rgba(255, 255, 255, 0.95);
@@ -63,26 +44,8 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+ 
 
-.light main section div div .welcome-section .welcome-info div .cv, .light main section div div div .cv{
-    background-color: var(--cardet);
-    padding: 10px;
-    color: white;
-    border-radius: 20px;
-    border: 2px outset rgba(242, 223, 217, 0.6);
-}
-.light main section div div .welcome-section .welcome-info a, .light main section div .contact-list a, .light main section div .contact-list svg, .light main section div .contact-sect h3 {
-    text-decoration: none;
-    color: white;
-}
-
-.light main section div div div .contact h1{
-    border-bottom: 2px solid var(--cardet);
-}
-
-.light main section div .contact h1 {
-    color: white;
-}
 .light main section div div div .other-exp-sect div ul span{
     color: var(--rose-taupe);
 }
@@ -103,8 +66,8 @@
 }
 
 .light .nav-tabs li button:hover {
-background-color: rgba(255, 253, 253, 0.838);
-  color: var(--cardet);
+    background-color: rgba(255, 253, 253, 0.838);
+    color: var(--cardet);
 }
 .light .project-card div h3{
     color: var(--cardet);
