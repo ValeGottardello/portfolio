@@ -1,0 +1,53 @@
+.education{
+    margin: 40px;
+    padding: 20px;
+    gap: 40px;
+}
+.education article h2{
+    text-align: center;
+}
+.education article ul li{
+    list-style: none;
+}
+.skills-wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.skills-icon{
+    justify-self: center;
+    padding: 15px;
+    width: 130px;
+    height: 130px;
+}
+.education article .skills-wrapper{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.education article .other-exp-sect{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.other-exp-sect div ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.other-exp-sect div ul li {
+    font-size: 1.1rem;
+}
+.other-exp-sect div ul span {
+    font-size: 0.8rem;
+}
+.other-exp-sect div h3 {
+    font-size: 1.5rem;
+    font-family: var(--font-titles);
+}

@@ -1,0 +1,200 @@
+/* 
+.dark .footer-title,.dark .aside-title{
+    color: rgba(118, 116, 130, 0.225);
+}
+.dark{
+    background: linear-gradient(to bottom, rgb(28, 25, 34) ,rgb(53, 54, 63));
+    
+}
+
+.dark main section div div div .slides .about-sect{
+    background-color:#64577d45;
+    color:var(--platinum);
+    border: 2px outset #2a283192;
+}
+.dark main section div div div .slides .about-sect div a {
+    color: white;
+}
+
+.dark main aside .mode {
+    background-color: var(--french-gray);
+    border: 2px outset rgba(43, 30, 63, 0.6);
+}
+.dark main aside .mode:active{
+    background-color: var(--platinum);
+}
+.dark main section div div div .education{
+    background-color: #64577d45;
+    color: #c9c2cd83;
+    border: 2px outset #2a283192;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.dark main section div div div .education article h2 {
+    background-color:#77747c45;
+    color:white;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+}
+
+.dark main section div div div .education article h2 {
+    text-align: center;
+}
+.dark main section div div div .education article ul li{
+    list-style: none;
+}
+
+.dark main section div div .welcome-section .welcome-info div{
+    background-color: #64577d45;
+    color: #fbfafae6;
+    border: 2px outset #2a283192;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.dark main section div div .welcome-section .welcome-info div .cv, .dark main section div div div .cv{
+    background-color:var(--platinum);
+    color: var(--fucsia);
+    padding: 10px;
+} */ 
+.dark{
+    background: linear-gradient(to bottom, rgb(28, 25, 34) ,rgb(53, 54, 63));
+}
+
+.dark .footer-title, .dark .aside-title{
+    color: rgba(229, 229, 231, 0.212);
+}
+.dark footer div ul a{
+    color: var(--orange);
+}
+.dark footer div ul li a:hover {
+   color:white;
+}
+.dark footer div ul li:hover {
+    background-color: rgb(158, 69, 57);
+    border-radius: 10px;
+ }
+.dark main aside .mode {
+    background-color:#f66e1a79;
+    border: 2px inset var(--ultra-violet);
+}
+.dark main aside .mode:active{
+    background-color: #F2DFD9ff;
+}
+
+.dark main section div div div .slides .about-sect{
+    background-color: rgba(126, 91, 95, 0.159);
+    color: rgba(255, 255, 255, 0.95);
+    border: 2px outset var(--cardet);
+}
+
+.dark main section div div div .slides .about-sect h2{
+    color: white;
+    text-align: center;
+    border: 2px outset var(--fucsia);
+    
+}
+.dark main section div div div .slides .about-sect div a {
+    color: white;
+}
+.dark main section div div div .education {
+    background-color: rgba(126, 91, 95, 0.159);
+    color: rgba(255, 255, 255, 0.95);
+    border: 2px outset var(--cardet);
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.dark main section div div div .education article h2 {
+    color: white;
+    background-color: var(--french-gray);
+    border: 1px outset var(--orange);
+}
+.dark main section div div div .education .skills-icon{
+    background-color: #a9a7a7aa;
+    border-radius: 50%;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+    padding: 5px;
+    margin: 10px 0;
+} 
+
+.dark main section div div div .education article ul li{
+    list-style: none;
+}
+
+.dark main section div div .welcome-section .welcome-info div{
+    background-color: rgba(117, 104, 96, 0.159);
+    color: rgba(255, 255, 255, 0.95);
+    border: 2px outset  var(--orange);;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.dark main section div div .welcome-section .welcome-info div .cv, .dark main section div div div .cv{
+    background-color: var(--orange);
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    border: 2px outset rgba(239, 21, 105, 0.6);
+}
+.dark main section div div .welcome-section .welcome-info a, .dark main section div .contact-list a, .dark main section div .contact-list svg, .dark main section div .contact-sect h3 {
+    text-decoration: none;
+    color: white;
+}
+
+.dark main section div div div .contact h1{
+    border-bottom: 2px solid var(--orange);
+}
+
+.dark main section div .contact h1 {
+    color: white;
+}
+.dark main section div div div .other-exp-sect div ul span{
+    color: var(--fucsia);
+}
+.dark main section div div div .other-exp-sect div ul li{
+    color: rgb(249, 205, 182);
+}
+.dark main section div div div .other-exp-sect div {
+    padding: 10px;
+    background-color: rgba(126, 91, 95, 0.185);
+}
+.dark main section div div div .other-exp-sect div h3{
+    font-family: var(--font-titles);
+}
+
+.dark .nav-tabs li button {
+    color: var(--fucsia);
+
+}
+
+.dark .nav-tabs li button:hover {
+background-color: white;
+  color: var(--orange);
+}
+.dark .project-card div h3{
+    color: var(--orange);
+}
+
+.dark .project-card div p{
+    color: var(--orange);
+}
+.dark .project-card div a{
+    color: white;
+    text-decoration: none;
+    background-color: var(--orange);
+    border-radius: 20px;
+    border: 2px outset rgba(239, 21, 105, 0.6);
+    width: fit-content;
+    padding: 10px;;
+}
+.dark .project-card div a:hover{
+    background-color: var(--cardet);
+    color: white;
+}
+
+.dark .project-card div .skills-used img{
+    background-color: rgba(250, 246, 244, 0.5);
+    border-radius: 50%;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+    padding: 5px;
+}

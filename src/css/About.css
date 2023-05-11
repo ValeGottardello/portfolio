@@ -1,0 +1,18 @@
+.about-wrapper{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "none none about-sect"
+    ;
+    gap: 50px;
+}
+.about-sect{
+    grid-area: about-sect;
+    padding: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.about-sect h2{
+    font-size: 2rem;
+}

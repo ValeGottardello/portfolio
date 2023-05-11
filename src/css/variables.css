@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Montserrat:wght@500&display=swap');
+
+:root {
+    --font-titles: 'Bruno Ace', cursive;
+    --font-text: 'Montserrat', sans-serif;
+
+    --tea-rose-red: #DCADA9ff;
+    --tea-rose-red-2: #F1C5BFff;
+    --rose-taupe: #7E5B5Fff;
+    --champagne-pink: #F2DFD9ff;
+    --cardet: #8F3D43ff;
+   
+    --french-gray: #2a2831;
+    --penn-blue: #211856;
+    --ultra-violet: #64577d;
+    --platinum: #E5E5E7ff;
+    --fucsia: #EE4167ff;
+    --orange: #f66e1a;
+
+}
