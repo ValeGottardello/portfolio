@@ -6,7 +6,7 @@ import '../css/Welcome.css'
 
 export default function Welcome () {
     return (
-        <section className="slides">
+        <section className="slides-about">
             <div className="welcome-section">
                 <article className="welcome-info">
                     <div>

@@ -1,7 +1,7 @@
 @import url('variables.css');
 .main {
     width: 100%;
-    height: 80vh;
+    /* height: 100vh; */
 
 }
 .App {
@@ -21,23 +21,11 @@
     font-size: 1.5rem;
     cursor: pointer;
 }
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(114, 64, 68);
+.light aside ul li a{
+    color: var(--cardet);
 }
-footer div ul{
-    margin: 0 30px;
-}
-footer div ul {
-    padding: 0;
-    margin: 20px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    height: 100%;
-    font-size: 2rem;
+.dark aside ul li a{
+    color: var(--orange);
 }
 
 

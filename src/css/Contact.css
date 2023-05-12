@@ -10,10 +10,16 @@
     text-transform: uppercase;
 }
 .contact-sect {
-    /* width: 50%; */
+    width: 60%;
     padding:0 20px;
     margin: auto auto;
 }
+@media screen and (max-width: 900px) {
+    .contact-sect {
+        width: 100%;
+    }
+}
+
 .contact-sect  h3{
     text-transform:uppercase;
     font-size: 1.5rem;
@@ -33,7 +39,7 @@ li a{
     height: 100%;
 }
 .contact{
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-direction: column; 
 }
@@ -41,28 +47,78 @@ form{
     text-align: center;
 }
 .light .contact h1 {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--cardet);
 }
-.light main section div div .welcome-section .welcome-info a, .light main section div .contact-list a, .light main section div .contact-list svg, .light main section div .contact-sect h3 {
+.light main section div div .welcome-section .welcome-info a, .light main section div .contact-list svg, .light main section div .contact-sect h3 {
     text-decoration: none;
     color: white;
-}
+    color:var(--cardet);
 
-.light main section div div div .contact h1{
-    border-bottom: 2px solid var(--cardet);
 }
-
-.light main section div .contact h1 {
-    color: white;
-}
-.light .wrapper .cv{
-    background-color:white;
+.light main section div .contact-sect form h3 {
+    background-color: rgba(126, 91, 95, 0.159);
+    color: var(--rose-taupe);
+    border: 2px outset  var(--cardet);;
+    border-radius: 15px;
+    text-align: center;
+    width: fit-content;
     padding: 10px;
-    color: rgb(143, 61, 67);
+    margin: 20px 0;
+}
+.dark main section div .contact-sect form h3 {
+    background-color: rgba(126, 91, 95, 0.407);
+    color: white;
+    border: 2px outset  var(--fucsia);
+    border-radius: 15px;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    margin: 20px 0;
+}
+.light main section div .contact-sect div ul li a, .light main section div .contact-sect div ul li svg,  .light main section div .contact-list a{
+    color: var(--cardet);
+    letter-spacing: 1px;
+    
+}
+
+.light .contact h1 {
+    color: var(--cardet);
+}
+.light .wrapper .contact .cv{
+    background-color:var(--rose-taupe);
+    padding: 10px;
     border-radius: 20px;
     border: 2px outset rgba(242, 223, 217, 0.6);
 }
-.light .wrapper .cv:hover, .light .wrapper .cv:focus, .light .wrapper .cv:active{
-    background-color: rgb(143, 61, 67);
+.dark .wrapper .contact .cv{
+    background-color: var(--orange);
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px outset rgba(239, 21, 105, 0.6);
     color: white;
+}
+.light .wrapper .cv a {
+    color: white;
+}
+.light .wrapper .cv:hover, .light .wrapper .cv:focus, .light .wrapper .cv:active{
+    background-color:var(--tea-rose-red);
 } 
+
+.light .wrapper .cv a:hover, .light .wrapper .cv a:focus, .light .wrapper .cv a:active{
+    color:var(--cardet);
+} 
+
+
+.light .contact-sect div ul span{
+    color: var(--rose-taupe);
+}
+
+
+.dark .contact h1{
+    border-bottom: 2px solid var(--orange);
+    color: white;
+}
+.dark .contact .cv:active, .dark .contact .cv:focus, .dark .contact .cv:hover{
+    background-color:var(--fucsia);
+    color: white;
+}

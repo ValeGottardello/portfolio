@@ -1,7 +1,6 @@
 .education{
     margin: 40px;
     padding: 20px;
-    gap: 40px;
 }
 .education article h2{
     text-align: center;
@@ -13,27 +12,38 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 80px;
-    padding-right: 80px;
 }
-
+.light .skills-wrapper img {
+    background-color: rgb(250, 246, 244);
+    border-radius: 20px;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+    padding: 10px;;
+}
+.dark .skills-wrapper img {
+    background-color: rgba(250, 246, 244, 0.255);
+    border-radius: 20px;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+    padding: 10px;
+}
 .skills-icon{
     justify-self: center;
     padding: 15px;
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
 }
-.education article .skills-wrapper{
+.education article .skills-wrapper, .education article .other-exp-sect{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    width: 80%;
+    margin: 40px auto;
 }
 
 .education article .other-exp-sect{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: column;
 }
 
 .other-exp-sect div ul {
@@ -41,9 +51,7 @@
     flex-direction: column;
     padding: 0;
 }
-.other-exp-sect div ul li {
-    font-size: 1.1rem;
-}
+
 .other-exp-sect div ul span {
     font-size: 0.8rem;
 }
@@ -51,3 +59,47 @@
     font-size: 1.5rem;
     font-family: var(--font-titles);
 }
+
+.light .other-exp-sect ul span{
+    color: var(--rose-taupe);
+}
+.dark .other-exp-sect ul li{
+    color: var(--orange);
+}
+.dark .other-exp-sect ul span{
+    color: #f66e1a92;
+}
+.light .other-exp-sect div ul li{
+    color:white;
+    font-size: 1.2rem;
+}
+.light .other-exp-sect div {
+    padding: 10px;
+    background-color: rgba(126, 91, 95, 0.185);
+}
+.dark .other-exp-sect div {
+    padding: 10px;
+    background-color: rgba(129, 103, 106, 0.185);
+}
+.light .other-exp-sect div h3{
+    color: var(--rose-taupe);
+}
+.dark .other-exp-sect div h3{
+    color: var(--fucsia);
+}
+.dark .other-exp-sec div h3{
+    color: var(--orange);
+}
+.light .education h2 {
+    border-bottom: 1px solid var(--cardet);
+    text-transform: uppercase;
+    color: var(--rose-taupe);
+    margin-bottom: 30px;
+}
+.dark .education h2 {
+    border-bottom: 1px solid var(--platinum);
+    text-transform: uppercase;
+    color: var(--platinum);
+    margin-bottom: 30px;
+}
+

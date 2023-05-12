@@ -24,10 +24,11 @@
     width: 80%;
     margin: 0 auto;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1060px) {
     .project-card{
         grid-template-columns: 1fr;    
-        margin: 30px auto;
+        margin: 20px auto;
+        padding: 20px;
 
     }
 }
@@ -45,15 +46,15 @@
     flex-wrap: wrap;
 }
 .skills-used img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     margin:0 5px;
 }
 
 .info-project{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: justify;
 }
 
@@ -72,4 +73,89 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: justify;
+}
+
+.light .nav-tabs li button {
+    color: var( --rose-taupe);
+
+}
+
+.light .nav-tabs li button:hover {
+    background-color: var(--cardet);
+    color: var( --champagne-pink);
+}
+.light .project-card div h3{
+    color: var(--cardet);
+}
+
+.light .project-card div p{
+    color: var(--cardet);
+}
+.light .project-card div a{
+    color: var(--cardet);
+    text-decoration: none;
+    background-color: rgb(250, 246, 244);
+    border-radius: 20px;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+    width: fit-content;
+    padding: 10px;
+}
+.light .project-card div a:hover{
+    background-color: var(--cardet);
+    color: white;
+}
+
+.light .project-card div .skills-used img{
+    background-color: rgba(250, 246, 244, 0.5);
+    border-radius: 50%;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+    padding: 5px;
+}
+.light .skills-used img {
+    background-color: rgb(250, 246, 244);
+    border-radius: 20px;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+    padding: 10px;;
+}
+.dark .skills-used img {
+    background-color: rgba(250, 246, 244, 0.252);
+    border-radius: 20px;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+    padding: 10px;;
+}
+.dark .project-card div h3{
+    color: var(--orange);
+}
+.dark .nav-tabs li button {
+    color: var(--fucsia);
+
+}
+
+.dark .nav-tabs li button:hover {
+background-color: rgba(255, 255, 255, 0.258);
+  color: var(--orange);
+}
+
+.dark .project-card div p{
+    color: var(--orange);
+}
+.dark .project-card div a{
+    color: white;
+    text-decoration: none;
+    background-color: var(--orange);
+    border-radius: 20px;
+    border: 2px outset rgba(239, 21, 105, 0.6);
+    width: fit-content;
+    padding: 10px;;
+}
+.dark .project-card div a:hover{
+    background-color: var(--cardet);
+    color: white;
+}
+
+.dark .project-card div .skills-used img{
+    background-color: rgba(250, 246, 244, 0.5);
+    border-radius: 50%;
+    border: 2px outset rgba(242, 223, 217, 0.6);
+    padding: 5px;
 }

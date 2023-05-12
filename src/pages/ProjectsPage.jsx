@@ -8,7 +8,7 @@ export default function ProjectsPage () {
     const [key, setKey] = useState('project-5');
 
     return (
-        <div className="slides">
+        <div className="slides-about">
             <Tabs
                 activeKey={key}
                 onSelect={(k) => setKey(k)}

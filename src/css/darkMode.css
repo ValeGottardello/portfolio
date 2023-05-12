@@ -1,61 +1,4 @@
-/* 
-.dark .footer-title,.dark .aside-title{
-    color: rgba(118, 116, 130, 0.225);
-}
-.dark{
-    background: linear-gradient(to bottom, rgb(28, 25, 34) ,rgb(53, 54, 63));
-    
-}
 
-.dark main section div div div .slides .about-sect{
-    background-color:#64577d45;
-    color:var(--platinum);
-    border: 2px outset #2a283192;
-}
-.dark main section div div div .slides .about-sect div a {
-    color: white;
-}
-
-.dark main aside .mode {
-    background-color: var(--french-gray);
-    border: 2px outset rgba(43, 30, 63, 0.6);
-}
-.dark main aside .mode:active{
-    background-color: var(--platinum);
-}
-.dark main section div div div .education{
-    background-color: #64577d45;
-    color: #c9c2cd83;
-    border: 2px outset #2a283192;
-    padding: 20px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.dark main section div div div .education article h2 {
-    background-color:#77747c45;
-    color:white;
-    border: 2px outset rgba(242, 223, 217, 0.6);
-}
-
-.dark main section div div div .education article h2 {
-    text-align: center;
-}
-.dark main section div div div .education article ul li{
-    list-style: none;
-}
-
-.dark main section div div .welcome-section .welcome-info div{
-    background-color: #64577d45;
-    color: #fbfafae6;
-    border: 2px outset #2a283192;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.dark main section div div .welcome-section .welcome-info div .cv, .dark main section div div div .cv{
-    background-color:var(--platinum);
-    color: var(--fucsia);
-    padding: 10px;
-} */ 
 .dark{
     background: linear-gradient(to bottom, rgb(28, 25, 34) ,rgb(53, 54, 63));
 }
@@ -129,25 +72,24 @@
     border-bottom-right-radius: 15px;
 }
 
-.dark main section div div .welcome-section .welcome-info div .cv, .dark main section div div div .cv{
+.dark .welcome-section .welcome-info .cv{
     background-color: var(--orange);
     padding: 10px;
-    color: white;
     border-radius: 20px;
     border: 2px outset rgba(239, 21, 105, 0.6);
+}
+.dark .welcome-section .welcome-info .cv a {
+    color: white;
+}
+.dark .welcome-section .welcome-info .cv:active, .dark .welcome-section .welcome-info .cv:focus, .dark .welcome-section .welcome-info .cv:hover{
+    background-color:var(--fucsia);
+    color: white;
 }
 .dark main section div div .welcome-section .welcome-info a, .dark main section div .contact-list a, .dark main section div .contact-list svg, .dark main section div .contact-sect h3 {
     text-decoration: none;
     color: white;
 }
 
-.dark main section div div div .contact h1{
-    border-bottom: 2px solid var(--orange);
-}
-
-.dark main section div .contact h1 {
-    color: white;
-}
 .dark main section div div div .other-exp-sect div ul span{
     color: var(--fucsia);
 }
@@ -162,39 +104,3 @@
     font-family: var(--font-titles);
 }
 
-.dark .nav-tabs li button {
-    color: var(--fucsia);
-
-}
-
-.dark .nav-tabs li button:hover {
-background-color: white;
-  color: var(--orange);
-}
-.dark .project-card div h3{
-    color: var(--orange);
-}
-
-.dark .project-card div p{
-    color: var(--orange);
-}
-.dark .project-card div a{
-    color: white;
-    text-decoration: none;
-    background-color: var(--orange);
-    border-radius: 20px;
-    border: 2px outset rgba(239, 21, 105, 0.6);
-    width: fit-content;
-    padding: 10px;;
-}
-.dark .project-card div a:hover{
-    background-color: var(--cardet);
-    color: white;
-}
-
-.dark .project-card div .skills-used img{
-    background-color: rgba(250, 246, 244, 0.5);
-    border-radius: 50%;
-    border: 2px outset rgba(242, 223, 217, 0.6);
-    padding: 5px;
-}

@@ -19,8 +19,8 @@ export default function ContactPage () {
             <section className='contact-wrapper'>
                 <div className='contact-sect'>
                     <div>
-                        <h3>Please, don't forget leave me a message!</h3>
                         <div>
+                        <h3>Find me on:</h3>
                             <ul className='contact-list'>
                                 <li><MdOutlineMail/><a href='mailto:valengottardello37@gmail.com?subject=Change%20the%20subject&body=Hi%20Valentina!'> valengottardello37@gmail.com</a></li>
                                 <li><FaLinkedin/><a href='https://www.linkedin.com/in/valentinagottardello/' target="_blank" rel="noreferrer"> https://www.linkedin.com/in/valentinagottardello/</a></li>
@@ -30,6 +30,7 @@ export default function ContactPage () {
                             </ul>
                         </div>
                         <Form onSubmit={handleSubmit}>
+                            <h3>Please, don't forget leave me a message!</h3>
                             <Form.Group className="mb-3">
                                 <Form.Control type="name" name='name'  id="email" placeholder="Name" />
                             </Form.Group>

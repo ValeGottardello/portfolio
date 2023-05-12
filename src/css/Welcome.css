@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: 
-      "welcome-info none none"
+      "welcome-info none"
   ;
   gap: 50px;
 }
@@ -41,11 +41,29 @@
 }
 
 .light .welcome-info h1 {
-  color: white;
+ color:var(--cardet);
 }
 .light .welcome-info h4 {
-  color: rgb(88, 62, 65);
+  color: hsl(353, 17%, 50%);
 }
 .light .welcome-info h3 {
-  color: rgb(238, 225, 227);
+  color: hsl(353, 17%, 50%);
 }
+.cv {
+  width: fit-content;
+}
+.dark .welcome-info h1 {
+ color:var(--orange);
+}
+.dark .welcome-info h4 {
+  color:var(--fucsia);
+}
+.dark .welcome-info h3 {
+  color: #f66e1a6e;
+}
+.light .welcome-info .cv {
+  background-color: var(--rose-taupe);
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px outset rgba(242, 223, 217, 0.6);
+} 

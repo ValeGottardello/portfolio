@@ -1,39 +1,60 @@
 .about-wrapper{
- width: 45%;
- margin: 30px auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 }
 .about-sect{
-    text-align: justify;
-    letter-spacing: 1px;
-    padding: 30px;
-    border-radius: 20px;
-}
-/* .about-wrapper .circle{
-    width: 200px;
-    height: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-} */
-.about-wrapper h2{
-    font-size: 1.8rem;
+    flex-direction: column;
+    align-items: center ;
+    text-align: justify;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+@media screen and (max-width: 1320px) {
+    .about-wrapper{
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+}
+.light .about-sect h2{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    width: fit-content;
+    font-size: 3em;
+    background-color: rgba(117, 44, 53, 0.38);
+    border-radius: 20px;
+    border: 1px inset var(--cardet);
+    padding: 15px;
+}
+.dark .about-sect h2{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    width: fit-content;
+    font-size: 3em;
+    background-color:#f66e1a31;
+    border-radius: 20px;
+    border: 1px inset var(--cardet);
+    padding: 15px;
+    text-align: center;
 }
 .light .wrapper .about-sect{
     background-color: rgba(126, 91, 95, 0.159);
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--cardet);
     border: 2px outset white;
 }
-.light .wrapper .about-wrapper .circle{
-    background-color: rgba(126, 91, 95, 0.158);
-    border-radius: 20px;
-    border: 1px inset var(--cardet);
+.dark .wrapper .about-sect{
+    background-color: rgba(129, 103, 106, 0.185);
+    color: var(--orange);
+    border: 2px outset rgba(255, 255, 255, 0.117);
 }
+
 .light .wrapper .about-wrapper h2{
     color: white;
     text-align: center;
 
 }
-.light main section div div div .slides .about-sect div a {
-    color: white;
+
+.slides-about{
+    height: 83vh;
 }

@@ -1,7 +1,4 @@
 
-.light{
-    background: linear-gradient(to bottom,#7E5B5Fff,#F1C5BFff,#F2DFD9ff);
-}
 .light .wrapper header nav {
     background-color: rgba(126, 91, 95, 0.508);
 }
@@ -46,53 +43,3 @@
 }
  
 
-.light main section div div div .other-exp-sect div ul span{
-    color: var(--rose-taupe);
-}
-.light main section div div div .other-exp-sect div ul li{
-    color: rgb(248, 221, 219);
-}
-.light main section div div div .other-exp-sect div {
-    padding: 10px;
-    background-color: rgba(126, 91, 95, 0.185);
-}
-.light main section div div div .other-exp-sect div h3{
-    font-family: var(--font-titles);
-}
-
-.light .nav-tabs li button {
-    color: var(--champagne-pink);
-
-}
-
-.light .nav-tabs li button:hover {
-    background-color: rgba(255, 253, 253, 0.838);
-    color: var(--cardet);
-}
-.light .project-card div h3{
-    color: var(--cardet);
-}
-
-.light .project-card div p{
-    color: var(--cardet);
-}
-.light .project-card div a{
-    color: var(--cardet);
-    text-decoration: none;
-    background-color: rgb(250, 246, 244);
-    border-radius: 20px;
-    border: 2px outset rgba(242, 223, 217, 0.6);
-    width: fit-content;
-    padding: 10px;;
-}
-.light .project-card div a:hover{
-    background-color: var(--cardet);
-    color: white;
-}
-
-.light .project-card div .skills-used img{
-    background-color: rgba(250, 246, 244, 0.5);
-    border-radius: 50%;
-    border: 2px outset rgba(242, 223, 217, 0.6);
-    padding: 5px;
-}
