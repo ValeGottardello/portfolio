@@ -58,3 +58,8 @@
 .dark main .mode:hover{
     background-color: var(--orange);
 }
+@media only screen and (max-width: 990px) {
+    .navbar-collapse .navbar-nav {
+        margin: 0 auto;
+    }
+}
