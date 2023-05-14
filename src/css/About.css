@@ -45,8 +45,8 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 .dark .wrapper .about-sect{
     background-color: rgba(129, 103, 106, 0.185);
-    color: var(--orange);
-    border: 2px outset rgba(255, 255, 255, 0.117);
+    color: white;
+    border: 2px outset var(--orange); 
 }
 
 .light .wrapper .about-wrapper h2{

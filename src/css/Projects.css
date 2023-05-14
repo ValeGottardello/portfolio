@@ -127,17 +127,16 @@
     color: var(--orange);
 }
 .dark .nav-tabs li button {
-    color: var(--fucsia);
-
+    color: var(--platinum);
 }
 
 .dark .nav-tabs li button:hover {
-background-color: rgba(255, 255, 255, 0.258);
-  color: var(--orange);
+    background-color: rgba(255, 255, 255, 0.258);
+    color: var(--orange);
 }
 
 .dark .project-card div p{
-    color: var(--orange);
+    color: white;
 }
 .dark .project-card div a{
     color: white;

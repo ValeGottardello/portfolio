@@ -123,10 +123,10 @@
  color:var(--orange);
 }
 .dark .welcome-info h4 {
-  color:var(--fucsia);
+  color: #f66e1a6e;
 }
 .dark .welcome-info h3 {
-  color: #f66e1a6e;
+  color:var(--platinum); 
 }
 .light .welcome-info .cv {
   background-color: var(--rose-taupe);

@@ -64,10 +64,10 @@
     color: var(--rose-taupe);
 }
 .dark .other-exp-sect ul li{
-    color: var(--orange);
+    color: #ed9055;
 }
 .dark .other-exp-sect ul span{
-    color: #f66e1a92;
+    color: white;
 }
 .light .other-exp-sect div ul li{
     color:white;
@@ -85,11 +85,9 @@
     color: var(--rose-taupe);
 }
 .dark .other-exp-sect div h3{
-    color: var(--fucsia);
-}
-.dark .other-exp-sec div h3{
     color: var(--orange);
 }
+
 .light .education h2 {
     border-bottom: 1px solid var(--cardet);
     text-transform: uppercase;

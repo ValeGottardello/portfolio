@@ -24,7 +24,6 @@
     font-size: 0.8rem;
     font-family: var(--font-titles);
     text-transform: uppercase;
-   
     padding: 10px;
 }
 
@@ -39,7 +38,7 @@
     border: 1px outset rgba(242, 223, 217, 0.6); 
 } 
 .dark .wrapper .navbar-nav a, .dark .wrapper .navbar-nav a, .dark .wrapper .navbar-nav a {
-    color:var(--fucsia)
+    color:var(--platinum)
 }
 .dark .wrapper .navbar-nav a:hover, .dark .wrapper .navbar-nav a:focus, .dark .wrapper .navbar-nav a:active{
     background-color: var(--orange);
