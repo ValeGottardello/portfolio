@@ -14,7 +14,7 @@ export default function Welcome () {
                         <h1>Valentina Gottardello</h1>
                         <h3>Junior Software Engineer</h3>
                         <button className='cv'>
-                            <a href="/cv/CV_Gottardello.pdf" target="_blank"> <FaRegClipboard/> Check my resume!</a>
+                            <a href="/cv/resume_Gottardello.pdf" target="_blank"> <FaRegClipboard/> Check my resume!</a>
                         </button>
                     </div>
                 </article>

@@ -158,3 +158,12 @@
     border: 2px outset rgba(242, 223, 217, 0.6);
     padding: 5px;
 }
+.github-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.github-link a {
+    margin:10px 0;
+}

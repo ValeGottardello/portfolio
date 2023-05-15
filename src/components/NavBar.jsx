@@ -34,7 +34,7 @@ function NavBar() {
                 <Link className='item-nav' to='/projects' >Projects</Link>
                 <Link className='item-nav' to='/skills' >Skills</Link>
                 <Link className='item-nav' to='/contact' >Contact</Link>
-                <a className='cv' href="/cv/CV_Gottardello.pdf" target="_blank">CV</a>       
+                <a className='cv' href="/cv/resume_Gottardello.pdf" target="_blank">CV</a>       
                 <Button variant="secondary" className='mode' onClick={toggleDarkMode}>{darkMode ? <MdDarkMode/> : <MdOutlineDarkMode/>}</Button>
               </Nav>
             </Navbar.Collapse>

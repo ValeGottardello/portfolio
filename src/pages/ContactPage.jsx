@@ -25,7 +25,7 @@ export default function ContactPage () {
                                 <li><MdOutlineMail/><a href='mailto:valengottardello37@gmail.com?subject=Change%20the%20subject&body=Hi%20Valentina!'> valengottardello37@gmail.com</a></li>
                                 <li><FaLinkedin/><a href='https://www.linkedin.com/in/valentinagottardello/' target="_blank" rel="noreferrer"> https://www.linkedin.com/in/valentinagottardello/</a></li>
                                 <li><FaGithub/><a href='https://github.com/ValeGottardello/' target="_blank" rel="noreferrer"> https://github.com/ValeGottardello/</a></li>
-                                <a href="/cv/CV_Gottardello.pdf" target="_blank"> <FaRegClipboard/>Check my resume!</a>
+                                <a href="/cv/resume_Gottardello.pdf" target="_blank"> <FaRegClipboard/>Check my resume!</a>
                                 
                             </ul>
                         </div>
