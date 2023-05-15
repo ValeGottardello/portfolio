@@ -73,7 +73,7 @@
   .welcome-info div button a{
   font-size: 0.4rem;
   }
-  .wrapper .welcome-info div .cv {padding: 3px;}
+  .main .welcome-info div .cv {padding: 3px;}
 
 }
 
@@ -103,8 +103,7 @@
   
 }
 .welcome-info div{
-  padding: 40px;
-
+  padding: 70px;
 }
 
 .light .welcome-info h1 {

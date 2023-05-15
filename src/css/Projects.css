@@ -163,7 +163,11 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 5px;
 }
 .github-link a {
     margin:10px 0;
+    text-transform: uppercase;
+    font-family:var(--font-titles);
+    font-size: 0.8rem;
 }

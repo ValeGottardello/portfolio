@@ -1,12 +1,21 @@
+import { motion } from 'framer-motion'
 import '../css/About.css'
 import '../css/lightMode.css'
 
-export default function HomePage () {
+export default function About () {
     return (
-        <section className='slides-about'>
+        <motion.div className='slides'
+                    id="about">
             <div className='about-wrapper'>
                 <div><img src="" alt="" /></div>
-                <article className='about-sect'>
+                <motion.article initial={{ opacity: 0, scale: 0.5 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: 0.5,
+                                    ease: [0, 0.71, 0.2, 1.01]
+                                }} 
+                                className='about-sect'>
                     <h2>About me</h2>
                     
                     <p>
@@ -18,9 +27,9 @@ export default function HomePage () {
                     <p>
                         As I embark on the next phase of my career, I am actively seeking opportunities in front-end, back-end, and full-stack development. I am eager to leverage my diverse experience and contribute to innovative projects.
                     </p>
-                </article>
+                </motion.article>
                 <div> <img src="" alt="" /></div>
             </div>
-        </section>
+        </motion.div >
     )
 }

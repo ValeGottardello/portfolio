@@ -38,3 +38,13 @@ h1,h2{
     font-family: var(--font-titles);
 }
 
+.main {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+  
+.slides {
+    scroll-snap-align: start;
+    height:95vh;
+}

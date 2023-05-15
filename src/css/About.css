@@ -38,18 +38,18 @@ grid-template-columns: 1fr 1fr 1fr;
     padding: 15px;
     text-align: center;
 }
-.light .wrapper .about-sect{
+.light .main .about-sect{
     background-color: rgba(126, 91, 95, 0.159);
     color: var(--cardet);
     border: 2px outset white;
 }
-.dark .wrapper .about-sect{
+.dark .main .about-sect{
     background-color: rgba(129, 103, 106, 0.185);
     color: white;
     border: 2px outset var(--orange); 
 }
 
-.light .wrapper .about-wrapper h2{
+.light .main .about-wrapper h2{
     color: white;
     text-align: center;
 

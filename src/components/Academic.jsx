@@ -1,10 +1,22 @@
 import '../css/Academic.css'
+// import { useState } from "react";
+import { motion } from "framer-motion";
 
-export default function AcademicPage () {
+export default function Academic () {
+
+
+
     return (
-        <div className="slides">        
+        <motion.div className="slides"   
+                    id="academic">        
             <div className='education'>
-                <article>
+                <motion.article initial={{ opacity: 0, scale: 0.5 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: 0.5,
+                                    ease: [0, 0.71, 0.2, 1.01]
+                                }}>
                     <h2>Tech skills</h2>
                     <div className='skills-wrapper'>
                         <img className='skills-icon' src="/images/icons/html.svg" alt="" /> 
@@ -19,9 +31,15 @@ export default function AcademicPage () {
                         <img className='skills-icon' src="/images/icons/git.svg" alt="" /> 
                         <img className='skills-icon' src="/images/icons/firebase.svg" alt="" /> 
                     </div>
-                </article>
-                <article>
-                    <h2>Some expirience</h2>
+                </motion.article>
+                <motion.article initial={{ opacity: 0, scale: 0.5 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: 0.5,
+                                    ease: [0, 0.71, 0.2, 1.01]
+                                }}>
+                    <h2>Other expiriences</h2>
                     <div className='other-exp-sect'>
                         <div>
                             <h3>Customer Service</h3>
@@ -51,8 +69,8 @@ export default function AcademicPage () {
                             </ul>
                         </div>
                     </div>
-                </article>
+                </motion.article>
             </div>
-        </div>
+        </motion.div >
     )
 }

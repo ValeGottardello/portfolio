@@ -16,43 +16,36 @@
     background-color: rgb(158, 69, 57);
     border-radius: 10px;
  }
-.dark main aside .mode {
+.dark .main aside .mode {
     background-color:#f66e1a79;
     border: 2px inset var(--ultra-violet);
 }
-.dark main aside .mode:active{
+.dark .main aside .mode:active{
     background-color: #F2DFD9ff;
 }
 
-.dark main section div div div .slides .about-sect{
+.dark .main div div .slides .about-sect{
     background-color: rgba(126, 91, 95, 0.159);
     color: rgba(255, 255, 255, 0.95);
     border: 2px outset var(--cardet);
 }
 
-.dark main section div div div .slides .about-sect h2{
+.dark .main  .slides .about-sect h2{
     color: white;
     text-align: center;
     border: 2px outset var(--fucsia);
     
 }
-.dark main section div div div .slides .about-sect div a {
+.dark .main .slides .about-sect div a {
     color: white;
 }
-.dark main section div div div .education {
-    background-color: rgba(126, 91, 95, 0.159);
-    color: rgba(255, 255, 255, 0.95);
-    border: 2px outset var(--cardet);
-    padding: 20px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.dark main section div div div .education article h2 {
+
+.dark .main  .education article h2 {
     color: white;
     background-color: var(--french-gray);
     border: 1px outset var(--orange);
 }
-.dark main section div div div .education .skills-icon{
+.dark .main .education .skills-icon{
     background-color: #a9a7a7aa;
     border-radius: 50%;
     border: 2px outset rgba(242, 223, 217, 0.6);
@@ -60,17 +53,10 @@
     margin: 10px 0;
 } 
 
-.dark main section div div div .education article ul li{
+.dark .education article ul li{
     list-style: none;
 }
 
-.dark main section div div .welcome-section .welcome-info div{
-    background-color: rgba(117, 104, 96, 0.159);
-    color: rgba(255, 255, 255, 0.95);
-    border: 2px outset  var(--orange);;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
 
 .dark .welcome-section .welcome-info .cv{
     background-color: var(--orange);
@@ -85,20 +71,20 @@
     background-color:var(--fucsia);
     color: white;
 }
-.dark main section div div .welcome-section .welcome-info a, .dark main section div .contact-list a, .dark main section div .contact-list svg, .dark main section div .contact-sect h3 {
+.dark .welcome-section .welcome-info a, .dark  .contact-list a, .dark .contact-list svg, .dark .contact-sect h3 {
     text-decoration: none;
     color: white;
 }
 
 
-.dark main section div div div .other-exp-sect div ul li{
+.dark .other-exp-sect div ul li{
     color: rgb(249, 205, 182);
 }
-.dark main section div div div .other-exp-sect div {
+.dark .other-exp-sect div {
     padding: 10px;
     background-color: rgba(126, 91, 95, 0.185);
 }
-.dark main section div div div .other-exp-sect div h3{
+.dark .other-exp-sect div h3{
     font-family: var(--font-titles);
 }
 

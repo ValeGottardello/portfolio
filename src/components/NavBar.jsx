@@ -1,11 +1,10 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import BodyClass from './BodyClass';
-import Button from 'react-bootstrap/Button';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import '../css/NavBar.css'
-
+import Navbar from 'react-bootstrap/Navbar';
+import BodyClass from './BodyClass';
+import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { MdDarkMode, MdOutlineDarkMode  } from "react-icons/md";
 
 function NavBar() {
@@ -26,15 +25,34 @@ function NavBar() {
     <>
         <BodyClass className={darkMode ? 'dark' : 'light'}/>
         <Navbar expand="lg">
-            <Navbar.Brand><Link to='/'>icone</Link></Navbar.Brand>
+            <Navbar.Brand><motion.a href="#welcome" 
+                          whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>Home</motion.a></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav>
-                <Link className='item-nav' to='/about' >About</Link>
-                <Link className='item-nav' to='/projects' >Projects</Link>
-                <Link className='item-nav' to='/skills' >Skills</Link>
-                <Link className='item-nav' to='/contact' >Contact</Link>
-                <a className='cv' href="/cv/resume_Gottardello.pdf" target="_blank">CV</a>       
+              <Nav> 
+                <motion.a href="#about" 
+                          whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>About</motion.a>
+                <motion.a href="#projects" 
+                          whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>Projects</motion.a>
+                <motion.a href="#academic" 
+                          whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>Skills</motion.a>
+                <motion.a href="#contact" 
+                          whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>Contact</motion.a>
+                <motion.a whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}  
+                          className='cv' 
+                          href="/cv/resume_Gottardello.pdf" target="_blank">CV</motion.a>       
                 <Button variant="secondary" className='mode' onClick={toggleDarkMode}>{darkMode ? <MdDarkMode/> : <MdOutlineDarkMode/>}</Button>
               </Nav>
             </Navbar.Collapse>
@@ -45,3 +63,4 @@ function NavBar() {
 
 export default NavBar;
 
+    

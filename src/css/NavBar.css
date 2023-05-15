@@ -1,9 +1,18 @@
-.wrapper header .navbar {
+.main .navbar {
     justify-content: flex-end;
     width: 100%;
     padding: 0;
+    position: sticky;
+    top: 0;
 }
 
+.light .main nav {
+    background-color: rgba(126, 91, 95, 0.508);
+}
+
+.dark .main nav {
+    background-color: rgba(129, 103, 106, 0.185);
+}
 .navbar span a{
     margin: 0 20px;
 }
@@ -26,21 +35,26 @@
     text-transform: uppercase;
     padding: 10px;
 }
+.navbar-nav  a:hover,.cv:hover {
+    scale: 1.2 ;
+}
+.navbar-nav  a:active,.cv:active{
+    scale: 0.9
+}
 
-
-.light .wrapper .navbar-nav a, .light .wrapper .navbar-nav a, .light .wrapper .navbar-nav a {
+.light .main .navbar-nav a, .light .main .navbar-nav a, .light .main .navbar-nav a {
     color: white
 }
-.light .wrapper .navbar-nav a:hover, .light .wrapper .navbar-nav a:focus, .light .wrapper .navbar-nav a:active{
+.light .main .navbar-nav a:hover, .light .main .navbar-nav a:focus, .light .main .navbar-nav a:active{
     background-color: rgb(143, 61, 67);
     color: white;
     border-radius: 10px;
     border: 1px outset rgba(242, 223, 217, 0.6); 
 } 
-.dark .wrapper .navbar-nav a, .dark .wrapper .navbar-nav a, .dark .wrapper .navbar-nav a {
+.dark .main .navbar-nav a, .dark .main .navbar-nav a, .dark .main .navbar-nav a {
     color:var(--platinum)
 }
-.dark .wrapper .navbar-nav a:hover, .dark .wrapper .navbar-nav a:focus, .dark .wrapper .navbar-nav a:active{
+.dark .main .navbar-nav a:hover, .dark .main .navbar-nav a:focus, .dark .main .navbar-nav a:active{
     background-color: var(--orange);
     color: white;
     border-radius: 10px;
