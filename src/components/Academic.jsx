@@ -1,6 +1,6 @@
 import '../css/Academic.css'
 // import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 export default function Academic () {
 
@@ -8,15 +8,11 @@ export default function Academic () {
 
     return (
         <motion.div className="slides"   
-                    id="academic">        
+                    id="academic"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}>        
             <div className='education'>
-                <motion.article initial={{ opacity: 0, scale: 0.5 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{
-                                    duration: 0.8,
-                                    delay: 0.5,
-                                    ease: [0, 0.71, 0.2, 1.01]
-                                }}>
+                <article>
                     <h2>Tech skills</h2>
                     <div className='skills-wrapper'>
                         <img className='skills-icon' src="/images/icons/html.svg" alt="" /> 
@@ -31,14 +27,8 @@ export default function Academic () {
                         <img className='skills-icon' src="/images/icons/git.svg" alt="" /> 
                         <img className='skills-icon' src="/images/icons/firebase.svg" alt="" /> 
                     </div>
-                </motion.article>
-                <motion.article initial={{ opacity: 0, scale: 0.5 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{
-                                    duration: 0.8,
-                                    delay: 0.5,
-                                    ease: [0, 0.71, 0.2, 1.01]
-                                }}>
+                </article>
+                <article>
                     <h2>Other expiriences</h2>
                     <div className='other-exp-sect'>
                         <div>
@@ -69,7 +59,7 @@ export default function Academic () {
                             </ul>
                         </div>
                     </div>
-                </motion.article>
+                </article>
             </div>
         </motion.div >
     )

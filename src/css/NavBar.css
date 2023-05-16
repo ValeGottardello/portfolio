@@ -1,4 +1,7 @@
-.main .navbar {
+header {
+    height: 60px;
+}
+.main header .navbar {
     justify-content: flex-end;
     width: 100%;
     padding: 0;
@@ -61,15 +64,21 @@
     border: 1px outset rgba(242, 223, 217, 0.6); 
 } 
 
-.dark main .mode {
-    background-color:#64577d;
+.light .mode {
+    background-color:var(--cardet);
     border: 2px inset #F2DFD9ff;
 }
-.dark main .mode:active{
-    background-color: var(--platinum);
+.dark .mode {
+    background-color:var(--orange);
+    border: 2px inset #F2DFD9ff;
 }
-.dark main .mode:hover{
+
+.dark .mode:hover{
     background-color: var(--orange);
+}
+
+.light .mode:hover{
+    background-color: var(--cardet);
 }
 @media only screen and (max-width: 990px) {
     .navbar-collapse .navbar-nav {

@@ -5,17 +5,13 @@ import '../css/lightMode.css'
 export default function About () {
     return (
         <motion.div className='slides'
-                    id="about">
+                    id="about"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    style={{ height: "100vh" }}>
             <div className='about-wrapper'>
                 <div><img src="" alt="" /></div>
-                <motion.article initial={{ opacity: 0, scale: 0.5 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{
-                                    duration: 0.8,
-                                    delay: 0.5,
-                                    ease: [0, 0.71, 0.2, 1.01]
-                                }} 
-                                className='about-sect'>
+                <article className='about-sect'>
                     <h2>About me</h2>
                     
                     <p>
@@ -27,7 +23,7 @@ export default function About () {
                     <p>
                         As I embark on the next phase of my career, I am actively seeking opportunities in front-end, back-end, and full-stack development. I am eager to leverage my diverse experience and contribute to innovative projects.
                     </p>
-                </motion.article>
+                </article>
                 <div> <img src="" alt="" /></div>
             </div>
         </motion.div >

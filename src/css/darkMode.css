@@ -40,7 +40,7 @@
     color: white;
 }
 
-.dark .main  .education article h2 {
+.dark .main  .education article h2{
     color: white;
     background-color: var(--french-gray);
     border: 1px outset var(--orange);

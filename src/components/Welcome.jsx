@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaRegClipboard} from 'react-icons/fa';
+import { FaRegClipboard } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import '../css/Welcome.css'
 
@@ -7,7 +7,10 @@ import '../css/Welcome.css'
 export default function Welcome () {
     return (
         <motion.div  className="slides" 
-                    id="welcome">
+                    id="welcome"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    style={{ height: "100vh" }}>
             <div className="welcome-section">
                 <article className="welcome-info">
                     <div>

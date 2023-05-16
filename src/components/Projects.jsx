@@ -4,20 +4,17 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import '../css/Projects.css'
 import { motion } from 'framer-motion';
-export default function ProjectsPage () {
+
+export default function Projects () {
     const [key, setKey] = useState('project-5');
 
     return (
         <motion.div  
             className="slides"  
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.8,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01]
-            }}
-            id="projects">
+            id="projects"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            style={{ height: "100vh" }}>
             <Tabs
                 activeKey={key}
                 onSelect={(k) => setKey(k)}

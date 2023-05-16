@@ -17,14 +17,10 @@ export default function Contact () {
     return (
 
         <motion.div className="slides"   
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                        duration: 0.8,
-                        delay: 0.5,
-                        ease: [0, 0.71, 0.2, 1.01]
-                    }}
-                    id="contact">
+                    id="contact"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    style={{ height: "100vh" }}>
                 <section className='contact-wrapper'>
                     <div className='contact-sect'>
                         <div>

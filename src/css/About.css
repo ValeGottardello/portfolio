@@ -16,6 +16,15 @@ grid-template-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 3fr 1fr;
     }
 }
+@media screen and (max-width: 740px) {
+    .main .slides .about-sect h2{
+        font-size: 1.5rem;
+    }
+
+    .main .slides .about-sect p{
+        font-size: 0.9rem;
+    }
+}
 .light .about-sect h2{
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -53,8 +62,4 @@ grid-template-columns: 1fr 1fr 1fr;
     color: white;
     text-align: center;
 
-}
-
-.slides-about{
-    height: 83vh;
 }

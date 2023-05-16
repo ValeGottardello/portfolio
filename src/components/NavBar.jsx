@@ -22,7 +22,7 @@ function NavBar() {
     };
   
   return (
-    <>
+    <header>
         <BodyClass className={darkMode ? 'dark' : 'light'}/>
         <Navbar expand="lg">
             <Navbar.Brand><motion.a href="#welcome" 
@@ -57,7 +57,7 @@ function NavBar() {
               </Nav>
             </Navbar.Collapse>
         </Navbar>
-    </>
+    </header>
   );
 }
 

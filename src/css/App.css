@@ -39,12 +39,36 @@ h1,h2{
 }
 
 .main {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     scroll-snap-type: y mandatory;
-    height: 100vh;
 }
   
 .slides {
     scroll-snap-align: start;
-    height:95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+@media screen and (max-width: 1060px) {
+    .slides {
+        height: fit-content!important;
+        margin: 70px 0;
+    }
+}
+
+footer ul {
+    margin: 20px auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.light footer ul li a svg{
+    color: var(--cardet);
+}
+.dark footer ul li a svg{
+    color: var(--orange);
 }
