@@ -54,13 +54,30 @@ export default function Projects () {
                         </div>
                     </div>
                     <div className='skills-used'>
-                       <img className="img-icon" src="/images/icons/react.svg" alt="" /> 
-                       <img src="/images/icons/javascript.svg" alt="" /> 
-                       <img src="/images/icons/bootstrap.svg" alt="" /> 
-                       <img src="/images/icons/node.svg" alt="" /> 
-                       <img src="/images/icons/express.svg" alt="" /> 
-                       <img src="/images/icons/postegresql.svg" alt="" /> 
-                       <img src="/images/icons/css.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                          src="/images/icons/javascript.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                          src="/images/icons/bootstrap.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                          src="/images/icons/node.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                          src="/images/icons/express.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                          src="/images/icons/postegresql.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                          src="/images/icons/css.svg" alt="" /> 
                     </div>
                 </Tab>
                 <Tab eventKey="project-4" title="PLAN MY PLATE" >
@@ -90,11 +107,26 @@ export default function Projects () {
                             </div>
                     </div>
                     <div className='skills-used'>
-                        <img className="img-icon" src="/images/icons/react.svg" alt="" /> 
-                        <img src="/images/icons/javascript.svg" alt="" /> 
-                        <img src="/images/icons/bootstrap.svg" alt="" /> 
-                        <img src="/images/icons/firebase.svg" alt="" /> 
-                        <img src="/images/icons/css.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/react.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/javascript.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/bootstrap.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/firebase.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/css.svg" alt="" /> 
                     </div>
                 </Tab>
                 <Tab eventKey="project-3" title="Servo API" >
@@ -117,11 +149,26 @@ export default function Projects () {
                         </div>
                     </div>
                     <div className='skills-used'>
-                        <img src="/images/icons/javascript.svg" alt="" /> 
-                        <img src="/images/icons/node.svg" alt="" /> 
-                        <img src="/images/icons/express.svg" alt="" /> 
-                        <img src="/images/icons/postegresql.svg" alt="" /> 
-                        <img src="/images/icons/css.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/javascript.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/node.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/express.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/postegresql.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/css.svg" alt="" /> 
                     </div>
                 </Tab>
                 <Tab eventKey="project-2" title="Talker's">
@@ -144,11 +191,26 @@ export default function Projects () {
                         </div>
                     </div>
                     <div className='skills-used'>
-                        <img src="/images/icons/javascript.svg" alt="" /> 
-                        <img src="/images/icons/node.svg" alt="" /> 
-                        <img src="/images/icons/express.svg" alt="" /> 
-                        <img src="/images/icons/postegresql.svg" alt="" /> 
-                        <img src="/images/icons/css.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/javascript.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/node.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/express.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/postegresql.svg" alt="" /> 
+                        <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/css.svg" alt="" /> 
                     </div>
                 </Tab>
                 <Tab eventKey="project-1" title="TicTacToe" >
@@ -178,9 +240,18 @@ export default function Projects () {
                         </div>
                     </div>
                     <div className='skills-used'>
-                       <img src="/images/icons/javascript.svg" alt="" /> 
-                       <img src="/images/icons/html.svg" alt="" /> 
-                       <img src="/images/icons/css.svg" alt="" /> 
+                       <motion.img  whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          src="/images/icons/javascript.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                           src="/images/icons/html.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                           src="/images/icons/css.svg" alt="" /> 
                     </div>
                 </Tab>
                 <Tab eventKey="project-0" title="Mobilia" >
@@ -209,10 +280,22 @@ export default function Projects () {
                         </div>
                     </div>
                     <div className='skills-used'>
-                       <img src="/images/icons/html.svg" alt="" /> 
-                       <img src="/images/icons/css.svg" alt="" /> 
-                       <img src="/images/icons/bootstrap.svg" alt="" /> 
-                       <img src="/images/icons/sass.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                           src="/images/icons/html.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                           src="/images/icons/css.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                           src="/images/icons/bootstrap.svg" alt="" /> 
+                       <motion.img whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                           src="/images/icons/sass.svg" alt="" /> 
                     </div>
                 </Tab>
             </Tabs>

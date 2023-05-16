@@ -5,7 +5,10 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MdDarkMode, MdOutlineDarkMode  } from "react-icons/md";
+import { MdDarkMode, MdOutlineDarkMode, MdOutlineContactMail  } from "react-icons/md";
+import { SiMinds } from "react-icons/si";
+import { FaRegClipboard, FaUserAlt, FaCode } from 'react-icons/fa';
+
 
 function NavBar() {
     const [darkMode, setDarkMode] = useState(false);
@@ -28,31 +31,31 @@ function NavBar() {
             <Navbar.Brand><motion.a href="#welcome" 
                           whileHover={{ scale: 1.2 }}
                           whileTap={{ scale: 0.9 }}
-                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>Home</motion.a></Navbar.Brand>
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} className="vg-icon">VG</motion.a></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav> 
                 <motion.a href="#about" 
                           whileHover={{ scale: 1.2 }}
                           whileTap={{ scale: 0.9 }}
-                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>About</motion.a>
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}><FaUserAlt/> About</motion.a>
                 <motion.a href="#projects" 
                           whileHover={{ scale: 1.2 }}
                           whileTap={{ scale: 0.9 }}
-                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>Projects</motion.a>
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}><FaCode/> Projects</motion.a>
                 <motion.a href="#academic" 
                           whileHover={{ scale: 1.2 }}
                           whileTap={{ scale: 0.9 }}
-                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>Skills</motion.a>
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}><SiMinds/>Skills</motion.a>
                 <motion.a href="#contact" 
                           whileHover={{ scale: 1.2 }}
                           whileTap={{ scale: 0.9 }}
-                          transition={{ type: "spring", stiffness: 400, damping: 17 }}>Contact</motion.a>
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }}><MdOutlineContactMail/>Contact</motion.a>
                 <motion.a whileHover={{ scale: 1.2 }}
                           whileTap={{ scale: 0.9 }}
                           transition={{ type: "spring", stiffness: 400, damping: 17 }}  
                           className='cv' 
-                          href="/cv/resume_Gottardello.pdf" target="_blank">CV</motion.a>       
+                          href="/cv/resume_Gottardello.pdf" target="_blank"><FaRegClipboard/> CV</motion.a>       
                 <Button variant="secondary" className='mode' onClick={toggleDarkMode}>{darkMode ? <MdDarkMode/> : <MdOutlineDarkMode/>}</Button>
               </Nav>
             </Navbar.Collapse>

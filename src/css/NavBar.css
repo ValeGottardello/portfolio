@@ -1,8 +1,7 @@
-header {
-    height: 60px;
-}
+
 .main header .navbar {
-    justify-content: flex-end;
+    height: 60px;
+    justify-content: space-between;
     width: 100%;
     padding: 0;
     position: sticky;
@@ -16,9 +15,7 @@ header {
 .dark .main nav {
     background-color: rgba(129, 103, 106, 0.185);
 }
-.navbar span a{
-    margin: 0 20px;
-}
+
 .navbar-collapse{
     justify-content: flex-end;
     width: 100%;
@@ -80,8 +77,50 @@ header {
 .light .mode:hover{
     background-color: var(--cardet);
 }
+.navbar .vg-icon{
+    border-radius: 50%;
+    margin: 20px;
+    align-self: self-start;
+}
+.light .vg-icon {
+    background-color:var(--cardet);
+    border: 2px inset #F2DFD9ff;
+    color: var(--platinum);
+}
+.dark .vg-icon {
+    background-color:var(--orange);
+    border: 2px inset var(--cardet);
+    color: var(--platinum);
+}
+
+.dark .vg-icon:hover{
+    background-color: var(--platinum);
+    color: var(--orange);
+}
+
+.light .vg-icon:hover{
+    background-color: var(--cardet);
+}
 @media only screen and (max-width: 990px) {
     .navbar-collapse .navbar-nav {
         margin: 0 auto;
     }
+    
+    .light .navbar-collapse .navbar-nav {
+        background-color:rgba(126, 91, 95, 0.796); ;
+    }
+    .dark .navbar-collapse .navbar-nav {
+        background-color: rgba(37, 31, 41, 0.917);
+
+    }
+}
+
+.main .navbar-nav a svg  {
+    color: white;
+    font-size: 0.9rem;
+    margin: 0 5px;
+}
+
+.main .navbar-nav a {
+    text-align: center;
 }

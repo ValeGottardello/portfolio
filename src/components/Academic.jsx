@@ -15,17 +15,62 @@ export default function Academic () {
                 <article>
                     <h2>Tech skills</h2>
                     <div className='skills-wrapper'>
-                        <img className='skills-icon' src="/images/icons/html.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/css.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/javascript.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/react.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/node.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/express.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/postegresql.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/bootstrap.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/sass.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/git.svg" alt="" /> 
-                        <img className='skills-icon' src="/images/icons/firebase.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/html.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/css.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/javascript.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/react.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/node.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/express.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/postegresql.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/bootstrap.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/sass.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/git.svg" alt="" /> 
+                        <motion.img className='skills-icon' 
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                                    src="/images/icons/firebase.svg" alt="" /> 
+                        
                     </div>
                 </article>
                 <article>
