@@ -49,7 +49,7 @@ export default function Projects () {
                                         drag="x"
                                         dragConstraints={{ left: -100, right: 100 }}
                                         target="_blank"  
-                                        href="https://fixup-git-main-valegottardello.vercel.app/">Demo here</motion.a >
+                                        href="https://fixup.vercel.app">Demo here</motion.a >
                             </div>
                         </div>
                     </div>
