@@ -10,7 +10,8 @@ export default function Academic () {
         <motion.div className="slides"   
                     id="academic"
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}>        
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 2}}>        
             <div className='education'>
                 <article>
                     <h2>Tech skills</h2>

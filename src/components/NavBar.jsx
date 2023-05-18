@@ -31,7 +31,9 @@ function NavBar() {
             <Navbar.Brand><motion.a href="#welcome" 
                           whileHover={{ scale: 1.2 }}
                           whileTap={{ scale: 0.9 }}
-                          transition={{ type: "spring", stiffness: 400, damping: 17 }} className="vg-icon">VG</motion.a></Navbar.Brand>
+                          transition={{ type: "spring", stiffness: 400, damping: 17 }} 
+                          className="vg-icon"
+                          >VG</motion.a></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav> 

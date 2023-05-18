@@ -10,7 +10,8 @@ export default function Welcome () {
                     id="welcome"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    style={{ height: "100vh" }}>
+                    style={{ height: "100vh" }}
+                    transition={{ duration: 2}}>
             <div className="welcome-section">
                 <article className="welcome-info">
                     <div>

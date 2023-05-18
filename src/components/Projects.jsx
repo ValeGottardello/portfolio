@@ -14,7 +14,8 @@ export default function Projects () {
             id="projects"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            style={{ height: "100vh" }}>
+            style={{ height: "100vh" }}
+            transition={{ duration: 2}}>
             <Tabs
                 activeKey={key}
                 onSelect={(k) => setKey(k)}

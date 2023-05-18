@@ -20,7 +20,8 @@ export default function Contact () {
                     id="contact"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    style={{ height: "100vh" }}>
+                    style={{ height: "100vh" }}
+                    transition={{ duration: 1}}>
                 <section className='contact-wrapper'>
                     <div className='contact-sect'>
                         <div>

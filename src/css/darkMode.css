@@ -1,6 +1,7 @@
 
 .dark{
     background: linear-gradient(to bottom, rgb(28, 25, 34) ,rgb(53, 54, 63));
+    /* background-image: url(/public/images/background.svg), linear-gradient(to bottom, rgb(28, 25, 34) ,rgb(53, 54, 63)); */
 }
 
 .dark .footer-title, .dark .aside-title{

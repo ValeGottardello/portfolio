@@ -8,7 +8,8 @@ export default function About () {
                     id="about"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    style={{ height: "100vh" }}>
+                    style={{ height: "100vh" }}
+                    transition={{ duration: 2}}>
             <div className='about-wrapper'>
                 <div><img src="" alt="" /></div>
                 <article className='about-sect'>
