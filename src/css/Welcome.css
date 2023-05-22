@@ -60,6 +60,7 @@
 @media screen and (max-width: 460px) {
   .welcome-info div{
     padding: 0!important;
+    margin: 30px!important;
   }
   .welcome-info {
     width: 100%;
@@ -70,7 +71,9 @@
     width: 100%;
     height: 100%;
   }
-  .main .welcome-info div .cv {padding: 3px;}
+  .main .welcome-info div .cv {
+    padding: 3px;
+  }
 
 }
 
