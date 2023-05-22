@@ -1,10 +1,7 @@
 import '../css/Academic.css'
-// import { useState } from "react";
 import { motion } from 'framer-motion'
 
 export default function Academic () {
-
-
 
     return (
         <motion.div className="slides"   

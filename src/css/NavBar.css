@@ -1,6 +1,5 @@
 
 .main header .navbar {
-    height: 60px;
     justify-content: space-between;
     width: 100%;
     padding: 0;
@@ -27,13 +26,6 @@
     gap: 20px;
     width: 60%;
     justify-content: space-evenly
-}
-
-.navbar-nav  a ,.cv  , .navbar span a{
-    font-size: 0.8rem;
-    font-family: var(--font-titles);
-    text-transform: uppercase;
-    padding: 10px;
 }
 .navbar-nav  a:hover,.cv:hover {
     scale: 1.2 ;
@@ -77,20 +69,39 @@
 .light .mode:hover{
     background-color: var(--cardet);
 }
-.navbar .vg-icon{
-    border-radius: 50%;
+.dark .navbar-toggler {
+    border: 1px outset var(--platinum)!important;
+    margin-right: 20px!important;
+}
+.light .navbar-toggler {
+    border: 1px outset var(--cardet)!important;
+    margin-right: 20px!important;
+}
+.navbar-nav  a ,.cv {
+    font-size: 0.8rem;
+    font-family: var(--font-titles);
+    text-transform: uppercase;
+    padding: 10px;
+}
+.navbar span {
+    margin: 10px 0;
+}
+.navbar span a {
+    font-size: 2rem;
+    font-family: var(--font-titles);
+    padding: 10px;
     margin: 20px;
     align-self: self-start;
 }
-.light .vg-icon {
-    background-color:var(--cardet);
-    border: 2px inset #F2DFD9ff;
-    color: var(--platinum);
-}
 .dark .vg-icon {
-    background-color:var(--orange);
-    border: 2px inset var(--cardet);
     color: var(--platinum);
+    border: 1px outset var(--platinum);
+    border-radius: 50%;
+}
+.light .vg-icon {
+    color: var(--cardet);
+    border: 1px outset var(--platinum);
+    border-radius: 50%;
 }
 
 .dark .vg-icon:hover{
@@ -99,7 +110,8 @@
 }
 
 .light .vg-icon:hover{
-    background-color: var(--cardet);
+    background-color: white;
+    color: var(--tea-rose-red-2);
 }
 @media only screen and (max-width: 990px) {
     .navbar-collapse .navbar-nav {
@@ -124,3 +136,4 @@
 .main .navbar-nav a {
     text-align: center;
 }
+
