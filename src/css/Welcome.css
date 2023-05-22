@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 460px) {
   .welcome-info div{
-  padding: 0;
+    padding: 0!important;
   }
   .welcome-info {
     width: 100%;
@@ -69,17 +69,6 @@
     font-size: 2rem;
     width: 100%;
     height: 100%;
-  }
-  .welcome-info div h4{
-    font-size: 0.6rem;
-    
-  }
-  .welcome-info div h3{
-    font-size: 0.8rem;
-    
-  }
-  .welcome-info div button a{
-  font-size: 0.4rem;
   }
   .main .welcome-info div .cv {padding: 3px;}
 
