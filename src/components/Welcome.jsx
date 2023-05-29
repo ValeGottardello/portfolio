@@ -16,7 +16,7 @@ export default function Welcome () {
                 <article className="welcome-info">
                     <div>
                         <h4>Hello, my name is: </h4>
-                        <h1 className='typing-name'>Valentina</h1>
+                        <h1 className='typing-name'>Valentinaa</h1>
                         <h1 className='typing-surname'>Gottardello</h1>
                         <h3>Junior Software Engineer</h3>
                         <motion.button className='cv'   whileHover={{ scale: 1.2 }}

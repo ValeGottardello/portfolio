@@ -180,14 +180,14 @@
 .light .typing-name::before{
   background-color: white;
   animation: 
-    typing 4s steps(9) 1s infinite;
+    typing 4s steps(10) 1s infinite;
 }
 .light .typing-name::after{
   width: 0.090em;
   background-color: rgba(0, 0, 0, 0.356);
   animation: 
-  typing 4s steps(9) 1s infinite,
-  blink 500ms steps(9) infinite;
+  typing 4s steps(10) 1s infinite,
+  blink 500ms steps(10) infinite;
 }
 
 @keyframes typing {
