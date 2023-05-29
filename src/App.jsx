@@ -16,13 +16,6 @@ function App () {
       
     return (
       <div className="App">
-        {/* <motion.div 
-                    className="flash-animation"
-                    key="flash-animation"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 1, yoyo: Infinity }}> */}
           <section className='main'>
             <NavBar/>
             <Welcome/>
@@ -39,7 +32,6 @@ function App () {
                 <li><a href="/cv/CV_Gottardello.pdf" target="_blank"><FaRegClipboard/></a></li>
             </ul>
           </footer>
-        {/* </motion.div> */}
       </div>
     ) 
 }

@@ -2,7 +2,6 @@ import '../css/NavBar.css'
 import Navbar from 'react-bootstrap/Navbar';
 import BodyClass from './BodyClass';
 import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MdDarkMode, MdOutlineDarkMode, MdOutlineContactMail  } from "react-icons/md";
@@ -28,12 +27,14 @@ function NavBar() {
     <header>
         <BodyClass className={darkMode ? 'dark' : 'light'}/>
         <Navbar expand="lg">
-            <Navbar.Brand><motion.a href="#welcome" 
+            <Navbar.Brand>
+            <h5 className='mode' onClick={toggleDarkMode}>{darkMode ? <MdDarkMode/> : <MdOutlineDarkMode/>}</h5><motion.a href="#welcome" 
                           whileHover={{ scale: 1.2 }}
                           whileTap={{ scale: 0.9 }}
                           transition={{ type: "spring", stiffness: 400, damping: 17 }} 
                           className="vg-icon"
-                          >VG</motion.a></Navbar.Brand>
+                          >Valentina G.</motion.a>
+                          </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav> 
@@ -58,7 +59,6 @@ function NavBar() {
                           transition={{ type: "spring", stiffness: 400, damping: 17 }}  
                           className='cv' 
                           href="/cv/resume_Gottardello.pdf" target="_blank"><FaRegClipboard/> CV</motion.a>       
-                <Button variant="secondary" className='mode' onClick={toggleDarkMode}>{darkMode ? <MdDarkMode/> : <MdOutlineDarkMode/>}</Button>
               </Nav>
             </Navbar.Collapse>
         </Navbar>

@@ -3,7 +3,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0;
-    position: sticky;
+    position: sticky!important;
     top: 0;
 }
 
@@ -35,7 +35,8 @@
 }
 
 .light .main .navbar-nav a, .light .main .navbar-nav a, .light .main .navbar-nav a {
-    color: white
+    color: white;
+    text-shadow: 2px -1px 2px rgba(0,0,0,0.6);
 }
 .light .main .navbar-nav a:hover, .light .main .navbar-nav a:focus, .light .main .navbar-nav a:active{
     background-color: rgb(143, 61, 67);
@@ -44,6 +45,7 @@
     border: 1px outset rgba(242, 223, 217, 0.6); 
 } 
 .dark .main .navbar-nav a, .dark .main .navbar-nav a, .dark .main .navbar-nav a {
+    text-shadow: 2px -1px 2px rgba(0,0,0,0.6);
     color:var(--platinum)
 }
 .dark .main .navbar-nav a:hover, .dark .main .navbar-nav a:focus, .dark .main .navbar-nav a:active{
@@ -54,21 +56,26 @@
 } 
 
 .light .mode {
-    background-color:var(--cardet);
-    border: 2px inset #F2DFD9ff;
+    color: white;
+    font-size: 1.5rem;
+    display:inline;
 }
+.light .mode svg {
+    margin-bottom: 8px;
+    border-radius: 50%;
+    border: 1px solid white;
+ }
+.dark .mode svg {
+    margin-bottom: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--orange);
+ }
 .dark .mode {
-    background-color:var(--orange);
-    border: 2px inset #F2DFD9ff;
+    color: var(--orange);
+    font-size: 1.5rem;
+    display:inline;
 }
 
-.dark .mode:hover{
-    background-color: var(--orange);
-}
-
-.light .mode:hover{
-    background-color: var(--cardet);
-}
 .dark .navbar-toggler {
     border: 1px outset var(--platinum)!important;
     margin-right: 20px!important;
@@ -95,13 +102,10 @@
 }
 .dark .vg-icon {
     color: var(--platinum);
-    border: 1px outset var(--platinum);
-    border-radius: 50%;
+
 }
 .light .vg-icon {
     color: var(--cardet);
-    border: 1px outset var(--platinum);
-    border-radius: 50%;
 }
 
 .dark .vg-icon:hover{

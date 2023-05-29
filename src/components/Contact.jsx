@@ -45,8 +45,8 @@ export default function Contact () {
                                     <Form.Control type="email" name='email' placeholder="Email" />
                                 </Form.Group>
                                 <Form.Group className="mb-3">
-                                    <Form.Control as="textarea" name='message' id="message" rows={3} />
-                                    <ValidationError prefix="Message" field="message" errors={state.errors} />
+                                    <Form.Control as="textarea" name='message' id="message" rows={3} placeholder="Message" />
+                                    <ValidationError prefix="Message" field="message"  errors={state.errors} />
                                 </Form.Group>
                                 <motion.button 
                                                 whileHover={{ scale: 1.2 }}

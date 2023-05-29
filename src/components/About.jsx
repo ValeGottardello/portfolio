@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
 import '../css/About.css'
 import '../css/lightMode.css'
+import { BiMap } from 'react-icons/bi';
+import { HiOutlineMail } from 'react-icons/hi';
+import { AiOutlinePhone } from 'react-icons/ai';
 
 export default function About () {
     return (
@@ -11,22 +14,37 @@ export default function About () {
                     style={{ height: "100vh" }}
                     transition={{ duration: 2}}>
             <div className='about-wrapper'>
-                <div><img src="" alt="" /></div>
+                <h2>About me</h2>
+                <h3 className='subtitle-about'>Know my history</h3>
                 <article className='about-sect'>
-                    <h2>About me</h2>
-                    
                     <p>
-                        I am a Software Engineer who completed a 12-week immersive course at General Assembly in May 2023. With four years of experience in the legal field, followed by three years working in the fitness industry as a Head Coach-Manager and pursuing a full-time professional athlete career, I made the decision to explore new horizons. This led me to embark on a transformative journey of relocation abroad, which propelled me into an exciting career path in the field of software engineering.
+                        <span className='presentation'>My name is <span className='myname'>
+                             Valentina</span></span>
+                        , I am a Software Engineer who completed a 12-week immersive course at General Assembly, a 500+ hours bootcamp where I have built experience with both frontend and backend technologies. 
                     </p>
                     <p>
-                        With a strong dedication to my professional growth, nurtured by my experience in sports, I am driven to make a significant impact in the field of software engineering. I am always fully prepared to face challenges head-on.
+                        With four years of experience in the legal field, followed by three years working in the fitness industry as a Head Coach-Manager, I made the decision to explore new horizon and embark on a transformative journey of relocation abroad and an exciting career path in the field of software engineering.
                     </p>
                     <p>
-                        As I embark on the next phase of my career, I am actively seeking opportunities in front-end, back-end, and full-stack development. I am eager to leverage my diverse experience and contribute to innovative projects.
+                        With a strong dedication to my professional growth, I am   driven to make a significant impact in the field of software engineering. I am always fully prepared to face challenges head-on.
                     </p>
                 </article>
-                <div> <img src="" alt="" /></div>
+                <article className='details-about-sec'>
+                    <h3><span><BiMap/> Based in </span>  
+                    Melbourne, Australia</h3>
+                    <h3>
+                        <span><HiOutlineMail/> My email address is </span>
+                        valengottardello37@gmail.com</h3>
+                    <h3><span><AiOutlinePhone/> My phone number is </span> 
+                        0493258402</h3>
+                </article>
+
             </div>
         </motion.div >
     )
 }
+
+// className="card-container"
+// initial="offscreen"
+// whileInView="onscreen"
+// viewport={{ once: true, amount: 0.8 }}
