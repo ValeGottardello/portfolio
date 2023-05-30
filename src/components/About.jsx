@@ -4,6 +4,7 @@ import '../css/lightMode.css'
 import { BiMap } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiOutlinePhone } from 'react-icons/ai';
+import Arrow from './Arrow.jsx';
 
 export default function About () {
     return (
@@ -12,11 +13,12 @@ export default function About () {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     style={{ height: "100vh" }}
-                    transition={{ duration: 2}}>
+                    transition={{ duration: 2}}
+                    >
             <div className='about-wrapper'>
                 <h2>About me</h2>
                 <h3 className='subtitle-about'>Know my history</h3>
-                <article className='about-sect'>
+                <article className='about-sect' initial={{ opacity: 0, scale: 0.5 }}>
                     <p>
                         <span className='presentation'>My name is <span className='myname'>
                              Valentina</span></span>
@@ -38,7 +40,7 @@ export default function About () {
                     <h3><span><AiOutlinePhone/> My phone number is </span> 
                         0493258402</h3>
                 </article>
-
+                <Arrow page={"#projects"}/>
             </div>
         </motion.div >
     )

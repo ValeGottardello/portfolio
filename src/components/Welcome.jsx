@@ -2,6 +2,7 @@ import React from 'react'
 import { FaRegClipboard } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import '../css/Welcome.css'
+import Arrow from './Arrow.jsx';
 
 
 export default function Welcome () {
@@ -25,13 +26,14 @@ export default function Welcome () {
                                                 dragConstraints={{ left: -100, right: 100 }}>
                             <a href="/cv/resume_Gottardello.pdf" target="_blank"> <FaRegClipboard/> Check my resume!</a>
                         </motion.button>
+                        <Arrow page={"#about"}/>
                     </div>
                 </article>
                 <div className='my-pic-sec'>
                     <motion.div
                         className='box-animate'
                         animate={{
-                        scale: [1, 1.3, 1.3, 1, 1],
+                        scale: [1, 1.2, 1.2, 1, 1],
                         rotate: [0, 0, 270, 270, 0],
                         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
                         }}

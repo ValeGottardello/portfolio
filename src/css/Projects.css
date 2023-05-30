@@ -34,6 +34,11 @@
 
     }
 }
+@media only screen and (max-width: 400px) {
+    .main #projects h1 {
+        font-size: 1.8rem;
+    }
+}
     
 .project-card .screen img {
     width: 100%;
@@ -172,4 +177,30 @@
     text-transform: uppercase;
     font-family:var(--font-titles);
     font-size: 0.8rem;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--cardet)!important;
+    background-color: #F1C5BFff!important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: var(--font-titles);
+    text-transform: uppercase;
+}
+#projects h1 {
+    font-family: var(--font-titles);
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px 0;
+    padding-bottom: 20px;
+}
+
+.light #projects h1 {
+    color: var(--cardet);
+    border-bottom: 1px solid var(--cardet);
+
 }

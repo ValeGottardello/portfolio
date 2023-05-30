@@ -3,6 +3,8 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 .about-sect{
     width: 70%;
@@ -31,7 +33,7 @@
     padding-inline: 5px;
 }
 .subtitle-about {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
 }
 .light .about-wrapper h3 span svg {
     margin-bottom: 2px;
@@ -88,7 +90,7 @@
 .light .about-wrapper h2{
     width: fit-content;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: rgba(117, 44, 53, 0.38);
     border-bottom: 1px inset var(--cardet);
     padding: 15px;
