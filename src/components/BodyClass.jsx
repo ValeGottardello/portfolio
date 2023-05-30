@@ -12,7 +12,7 @@ class BodyClass extends Component {
   }
 
   render() {
-    return null; // No renderizamos ningún elemento en el DOM
+    return null; 
   }
 }
 
