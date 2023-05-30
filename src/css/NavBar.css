@@ -56,14 +56,14 @@
 } 
 
 .light .mode {
-    color: white;
+    color: var(--cardet);
     font-size: 1.5rem;
     display:inline;
 }
 .light .mode svg {
     margin-bottom: 8px;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid var(--cardet);
  }
 .dark .mode svg {
     margin-bottom: 8px;
@@ -101,7 +101,7 @@
     align-self: self-start;
 }
 .dark .vg-icon {
-    color: var(--platinum);
+    color: var(--orange);
 
 }
 .light .vg-icon {
@@ -130,7 +130,11 @@
 
     }
 }
-
+@media only screen and (max-width: 360px) {
+    .vg-icon{
+        display: none;
+    }
+}
 .main .navbar-nav a svg  {
     color: white;
     font-size: 0.9rem;

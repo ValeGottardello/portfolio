@@ -4,6 +4,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import '../css/Projects.css'
 import { motion } from 'framer-motion';
+import Arrow from './Arrow.jsx';
 
 export default function Projects () {
     const [key, setKey] = useState('project-5');
@@ -16,6 +17,7 @@ export default function Projects () {
             whileInView={{ opacity: 1 }}
             style={{ height: "100vh" }}
             transition={{ duration: 2}}>
+            <h1>My Projects</h1>
             <Tabs
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
@@ -300,6 +302,7 @@ export default function Projects () {
                     </div>
                 </Tab>
             </Tabs>
+            <Arrow page={"#academic"}/>
         </motion.div>
     )
 }

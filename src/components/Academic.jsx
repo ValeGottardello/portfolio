@@ -1,5 +1,6 @@
 import '../css/Academic.css'
 import { motion } from 'framer-motion'
+import Arrow from './Arrow'
 
 export default function Academic () {
 
@@ -103,6 +104,7 @@ export default function Academic () {
                         </div>
                     </div>
                 </article>
+                <Arrow page={"#contact"}/>
             </div>
         </motion.div >
     )
