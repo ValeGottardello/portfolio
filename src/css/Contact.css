@@ -18,7 +18,15 @@
     height: 100%;
     margin: auto 0;
 }
-
+.icon-details{
+    display: none;
+}
+.light .icon-details li svg{
+    color: var(--cardet);
+}
+.dark .icon-details li svg{
+    color: var(--orange);
+}
 @media screen and (max-width: 1100px) {
     .contact-sect {
         width: 100%;
@@ -57,6 +65,13 @@
     }  
     .contact-list,.contact-sect div div h3 {
         display:none;
+    }
+    .icon-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
     }
 }
 

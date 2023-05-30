@@ -16,6 +16,7 @@ export default function Projects () {
             whileInView={{ opacity: 1 }}
             style={{ height: "100vh" }}
             transition={{ duration: 2}}>
+            <h2>My Projects</h2>
             <Tabs
                 activeKey={key}
                 onSelect={(k) => setKey(k)}

@@ -85,6 +85,14 @@
         gap: 10px;
     }
 }
+@media screen and (max-width: 740px) {
+    .about-wrapper{
+        width: 100%;
+    }
+    .about-wrapper h3{
+        width: 100%;
+    }
+}
 .light .about-wrapper h2{
     width: fit-content;
     text-transform: uppercase;

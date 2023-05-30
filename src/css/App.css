@@ -56,7 +56,7 @@ h1,h2{
 @media screen and (max-width: 1060px) {
     .slides {
         height: fit-content!important;
-        margin: 70px 0;
+        /* margin: 70px 0; */
     }
 }
 
