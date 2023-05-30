@@ -101,6 +101,3 @@ footer ul {
 .dark .arrow div {
     color: var(--platinum);
 }
-.slides {
-    height: max-content!important;
-}
