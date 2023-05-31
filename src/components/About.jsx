@@ -22,7 +22,7 @@ export default function About () {
                     <p>
                         <span className='presentation'>My name is <span className='myname'>
                              Valentina</span></span>
-                        , I am a Software Engineer who completed a 12-week immersive course at General Assembly, a 500+ hours bootcamp where I have built experience with both frontend and backend technologies. 
+                        , I am a Web Developer who completed a 12-week immersive course at General Assembly, a 500+ hours bootcamp where I have built experience with both frontend and backend technologies. 
                     </p>
                     <p>
                         With four years of experience in the legal field, followed by three years working in the fitness industry as a Head Coach-Manager, I made the decision to explore new horizon and embark on a transformative journey of relocation abroad and an exciting career path in the field of software engineering.
