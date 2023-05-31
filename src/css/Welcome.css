@@ -1,10 +1,13 @@
 
+
 .welcome-section{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: 
       "welcome-info my-pic-sec"
   ;
+  gap: 150px;
+  height: 100vh;
   gap: 150px;
   height: 100vh;
 }
@@ -20,6 +23,7 @@
 .light .my-pic-sec .box-animate {
   background-color: rgba(143, 61, 67, 0.605);
   filter: blur(2px) grayscale(50%);
+  filter: blur(2px) grayscale(50%);
 }
 .dark .my-pic-sec .box-animate {
   background-color: #46434c7d;
@@ -29,9 +33,13 @@
   position: absolute;
   width: 460px;
   height: 460px;
+  width: 460px;
+  height: 460px;
 }
 .mypicture {
   box-shadow: 4px 6px 10px -1px rgba(0,0,0,0.75);
+  width: 400px;
+  height: 400px;
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -42,6 +50,8 @@
 }
 @media screen and (max-width: 1260px) {
   .welcome-section{
+    width: 80%;
+    margin: 0 auto;
     width: 80%;
     margin: 0 auto;
   }
@@ -105,6 +115,7 @@
     font-size: 1.3rem;
     font-weight: 400;
     width: fit-content;
+    width: fit-content;
 }
 
 .welcome-info h1{
@@ -120,6 +131,7 @@
 }
 .welcome-info div  {
   /* width: 100%; */
+  /* width: 100%; */
   height: 100%;
 
 }
@@ -132,6 +144,11 @@
   
 }
 .welcome-info div{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 
   display: flex;
   flex-direction: column;
@@ -174,6 +191,9 @@
 .welcome-info h1 {
   font-family: var(--typing);
 }
+.welcome-info h1 {
+  font-family: var(--typing);
+}
 .typing-name::before,
 .typing-name::after{
   content: "";
@@ -192,6 +212,18 @@
 .light .typing-name::after{
   width: 0.090em;
   background-color: rgba(0, 0, 0, 0.356);
+  animation: 
+  typing 4s steps(10) 1s infinite,
+  blink 500ms steps(10) infinite;
+}
+.dark .typing-name::before{
+  background-color: #1D1B24ff;
+  animation: 
+    typing 4s steps(10) 1s infinite;
+}
+.dark .typing-name::after{
+  width: 0.090em;
+  background-color: rgba(199, 198, 198, 0.356);
   animation: 
   typing 4s steps(10) 1s infinite,
   blink 500ms steps(10) infinite;
