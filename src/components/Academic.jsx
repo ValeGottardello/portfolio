@@ -1,6 +1,7 @@
 import '../css/Academic.css'
 import { motion } from 'framer-motion'
 import Arrow from './Arrow'
+import SkillsList from './SkillsList'
 
 export default function Academic () {
 
@@ -9,67 +10,13 @@ export default function Academic () {
                     id="academic"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ duration: 2}}>        
+                    transition={{ duration: 2}}
+                    >        
             <div className='education'>
                 <article>
                     <h2>Tech skills</h2>
                     <div className='skills-wrapper'>
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/html.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/css.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/javascript.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/react.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/node.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/express.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/postegresql.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/bootstrap.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/sass.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/git.svg" alt="" /> 
-                        <motion.img className='skills-icon' 
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-                                    src="/images/icons/firebase.svg" alt="" /> 
-                        
+                        <SkillsList/>
                     </div>
                 </article>
                 <article>
@@ -102,9 +49,9 @@ export default function Academic () {
                                 <span>Jan 2013 - Jul 2018</span>
                             </ul>
                         </div>
+                    <Arrow page={"#contact"}/>
                     </div>
                 </article>
-                <Arrow page={"#contact"}/>
             </div>
         </motion.div >
     )

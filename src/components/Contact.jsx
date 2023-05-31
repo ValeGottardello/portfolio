@@ -32,17 +32,8 @@ export default function Contact () {
                                     <li><MdOutlineMail/><a href='mailto:valengottardello37@gmail.com?subject=Change%20the%20subject&body=Hi%20Valentina!'> valengottardello37@gmail.com</a></li>
                                     <li><FaLinkedin/><a href='https://www.linkedin.com/in/valentinagottardello/' target="_blank" rel="noreferrer"> https://www.linkedin.com/in/valentinagottardello/</a></li>
                                     <li><FaGithub/><a href='https://github.com/ValeGottardello/' target="_blank" rel="noreferrer"> https://github.com/ValeGottardello/</a></li>
-                                    <a href="/cv/resume_Gottardello.pdf" target="_blank"> <FaRegClipboard/>Check my resume!</a>
-                                        
+                                    <a href="/cv/resume_Gottardello.pdf" target="_blank"> <FaRegClipboard/> Check my resume!</a>   
                                 </ul>
-                                <div className='contact-mediaquery'>
-                                    <ul>
-                                        <li><a href='mailto:valengottardello37@gmail.com?subject=Change%20the%20subject&body=Hi%20Valentina!'><MdOutlineMail/></a></li>
-                                        <li><a href='https://www.linkedin.com/in/valentinagottardello/' target="_blank" rel="noreferrer"><FaLinkedin/></a></li>
-                                        <li><a href='https://github.com/ValeGottardello/' target="_blank" rel="noreferrer"><FaGithub/></a></li>
-                                        <li><a href="/cv/CV_Gottardello.pdf" target="_blank"><FaRegClipboard/></a></li>
-                                    </ul>
-                                </div>
                                 <ul className='icon-details'>
                                     <li><a href='mailto:valengottardello37@gmail.com?subject=Change%20the%20subject&body=Hi%20Valentina!'><MdOutlineMail/></a></li>
                                     <li><a href='https://www.linkedin.com/in/valentinagottardello/' target="_blank" rel="noreferrer"><FaLinkedin/></a></li>

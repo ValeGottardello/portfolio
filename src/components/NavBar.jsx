@@ -61,11 +61,12 @@ function NavBar() {
                           href="/cv/resume_Gottardello.pdf" target="_blank"><FaRegClipboard/> CV</motion.a>       
               </Nav>
             </Navbar.Collapse>
-        </Navbar>
+        </Navbar> 
     </header>
   );
 }
 
 export default NavBar;
+
 
     

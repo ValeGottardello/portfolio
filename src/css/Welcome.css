@@ -1,18 +1,22 @@
 
 
 .welcome-section{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: 
-      "welcome-info my-pic-sec"
-  ;
-  gap: 150px;
-  height: 100vh;
-  gap: 150px;
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  align-items: center;
+  gap: 50px;
+  width: 85%;
+}
+.light .welcome-info {
+  padding: 20px;
+  background-color:#eadad8 ;
+}
+.dark .welcome-info {
+    padding: 20px;
+  background-color: #2a2831;
 }
 .my-pic-sec {
-  grid-area: my-pic-sec;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28,37 +32,46 @@
 .dark .my-pic-sec .box-animate {
   background-color: #46434c7d;
 }
-.my-pic-sec .box-animate {
+.my-pic-sec{
+  width: 100%;
+  height: 100%;
+}
+ .box-animate {
   z-index: -1;
   position: absolute;
   width: 460px;
-  height: 460px;
-  width: 460px;
-  height: 460px;
+  height: 460px; 
 }
 .mypicture {
   box-shadow: 4px 6px 10px -1px rgba(0,0,0,0.75);
   width: 400px;
-  height: 400px;
-  width: 400px;
-  height: 400px;
+  height: 400px;  
   border-radius: 50%;
 }
 .welcome-info{
-  grid-area: welcome-info;
   text-align: start;
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1290px) {
   .welcome-section{
-    width: 80%;
-    margin: 0 auto;
-    width: 80%;
-    margin: 0 auto;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 100px;
   }
-  .my-pic-sec  {
-    display: none;
+  .box-animate{
+    width: 360px;
+    height: 360px; 
   }
-  
+  .mypicture {
+    width: 300px;
+    height: 300px; 
+  }
+  .welcome-info div h1{
+    font-size: 2rem;
+  }
+  .welcome-info div h4, .welcome-info div h4{
+    font-size: 1rem;
+  }
+
 }
 @media screen and (max-width: 1060px){
   .welcome-section{
@@ -75,35 +88,51 @@
     height: 100%;
   }
   .welcome-info div h1{
-    font-size: 3rem;
+    font-size: 3em;
     
 }
   .welcome-info div h4{
-    font-size: 1rem;
+    font-size: 1em;
     
 }
   .welcome-info div h3{
-    font-size: 1rem;
+    font-size: 1em;
     
 }
-.welcome-info div button a{
-  font-size: 0.8rem;
-}
+  .welcome-info div button a{
+    font-size: 0.8rem;
+  }
+  .my-pic-sec{
+    display: none;
+  }
 
 }
 
 @media screen and (max-width: 460px) {
   .welcome-info div{
     padding: 0!important;
-    margin: 30px!important;
+    margin: 0!important;
   }
   .welcome-info {
     width: 100%;
     height: 100%;
+    padding: 5px!important;
   }
   .welcome-info div h1{
-    font-size: 2rem;
-  }
+    font-size: 2em;
+    
+}
+.my-pic-sec{
+  display: none;
+}
+  .welcome-info div h4{
+    font-size: 0.8em;
+    
+}
+  .welcome-info div h3{
+    font-size:0.8em;
+    
+}
   .main .welcome-info div .cv {
     padding: 3px;
   }
@@ -205,7 +234,7 @@
 
 }
 .light .typing-name::before{
-  background-color: white;
+  background-color: #eadad8;
   animation: 
     typing 4s steps(10) 1s infinite;
 }
@@ -229,7 +258,7 @@
   blink 500ms steps(10) infinite;
 }
 .dark .typing-name::before{
-  background-color: #1D1B24ff;
+  background-color: #2a2831;
   animation: 
     typing 4s steps(10) 1s infinite;
 }

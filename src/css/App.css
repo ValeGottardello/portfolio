@@ -77,12 +77,30 @@ footer ul {
     color: var(--orange);
 }
 .arrow{
+    margin-top:20px ;
     align-self: center;
-    padding: 8px;
+    padding: 3px;
     cursor: pointer;
+    border-radius: 18px;
+    animation: 
+    blink2 1s infinite;
 }
+@keyframes blink2 {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+  }
 .arrow svg {
-    font-size: 1.5rem;
+    font-size: 1.5rem;   
 }
 
 .light .arrow {
@@ -97,7 +115,9 @@ footer ul {
 .dark .arrow {
     background-color: var(--orange);
 }
-
+.dark .arrow svg path{
+    color: white;
+}
 .dark .arrow div {
     color: var(--platinum);
 }

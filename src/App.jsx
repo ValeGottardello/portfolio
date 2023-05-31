@@ -9,7 +9,6 @@ import Academic from './components/Academic';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
-// import { motion } from 'framer-motion';
 
 
 function App () {

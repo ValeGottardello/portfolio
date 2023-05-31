@@ -90,7 +90,7 @@
 }
 .dark .contact-sect div form .cv {
     text-transform:uppercase;
-    background-color: rgba(126, 91, 95, 0.407);
+    background-color: #7e5b5f68;
     color: white;
     border: 1px outset var(--cardet);
     border-radius: 15px;
@@ -111,10 +111,34 @@
     padding-left: 0;
     font-size: 1.1rem;    
 }
+.contact-list li svg {
+    cursor: pointer;
+}
 li a{
     text-decoration: none;
 }
+.light .contact-list li svg path{
+    color: #c9b3b5;
 
+}
+.light .contact-list a svg path{
+    color: #c9b3b5;
+
+}
+.light .contact-list li svg path:hover{
+    color: #7e5b5f68;
+}
+.dark .contact-list li svg path{
+    color: #e3a680;
+
+}
+.dark .contact-list a svg path{
+    color: #e3a680;
+
+}
+.dark .contact-list li svg path:hover{
+    color: var(--orange);
+}
 .contact{
     display: flex;
     flex-direction: column; 
