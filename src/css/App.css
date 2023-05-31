@@ -106,18 +106,19 @@ footer ul {
 .light .arrow {
     background-color: var(--cardet);
 }
-.light .arrow svg path{
+.arrow svg path{
     color: white;
 }
-.light .arrow div {
-    color: var(--champagne-pink);
+ .arrow {
+    color: white;
 }
+ .arrow div {
+    color: white;
+}
+
 .dark .arrow {
     background-color: var(--orange);
 }
-.dark .arrow svg path{
+.arrow svg path{
     color: white;
-}
-.dark .arrow div {
-    color: var(--platinum);
 }
