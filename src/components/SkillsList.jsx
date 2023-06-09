@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 
 const SkillsList = () => {
-  const items = [`html`, `css`, `javascript`, `react`, `node`, `express`, `postegresql`, `bootstrap`,`sass`, `git`, `firebase`];
+  const items = [`html`, `css`, `javascript`, `react`, `node`, `express`, `postegresql`, `bootstrap`,`sass`, `git`, `firebase`, `tailwindcss`, `materialui`];
   const variants = {
     open: {
       y: 0,
